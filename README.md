@@ -1,2 +1,3 @@
-# ics-testnets
-Interchain Security Testnets
+# Interchain Security Testnets
+
+* [Private Testnet information](private-testnet/)
