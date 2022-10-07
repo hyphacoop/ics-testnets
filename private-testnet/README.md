@@ -85,5 +85,5 @@ On your local machine:
 
 On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files from your provider chain validator node.
-- Run [join-pepper.sh](join-pepper.sh) on your machine to set up a node in the `pepper` chain that runs via Cosmovisor.
+- Run [join-pepper.sh](join-pepper.sh).
 
