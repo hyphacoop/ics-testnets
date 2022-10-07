@@ -16,6 +16,7 @@ The genesis file of the consumer chain must be updated with the CCV states from 
 
 **Status**
 
+* 2022-10-07: Proposal 12 (_Create the salt consumer chain_) has passed in the provider chain
 * 2022-10-05: The genesis file has been initialized
 
 ### Details
@@ -57,6 +58,7 @@ On the node machine:
 
 ### Status
 
+* 2022-10-07: Proposal 13 (_Create the pepper consumer chain_) has passed in the provider chain
 * 2022-10-05: The genesis file has been initialized
 
 ### Details
