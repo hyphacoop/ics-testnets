@@ -16,6 +16,7 @@ The genesis file of the consumer chain must be updated with the CCV states from 
 
 **Status**
 
+* 2022-10-11: The genesis file has been updated with the CCV states from the provider chain
 * 2022-10-07: Proposal 12 (_Create the salt consumer chain_) has passed in the provider chain
 * 2022-10-05: The genesis file has been initialized
 
@@ -28,7 +29,7 @@ The genesis file of the consumer chain must be updated with the CCV states from 
   * Built on x86_64 with go v1.18.5
 * Binary hash: `5ae76b4206c0bb8f87208c6ab2b68545fde4cf2c27d53041e24218cab4b3e925`
 * **Spawn time: `2022-10-11T14:00:00Z`**
-* **Modified genesis file: `TBA`**
+* **Modified genesis file: `ccv-salt-genesis.json`**
 * **Persistent peer: `2bd4797ad1812fc7c90737e9ddef38114bd77229@68.183.199.144:26656`**
 
 **❗ The following instructions require a genesis file that has already been updated with the CCV states. This file will not be available until after the SpawnTime is reached.**
