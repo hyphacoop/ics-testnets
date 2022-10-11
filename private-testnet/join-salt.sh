@@ -44,7 +44,7 @@ cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 # Replace genesis file
-wget $GENESIS_FILE -O genesis.json
+wget $GENESIS_URL -O genesis.json
 mv genesis.json $NODE_HOME/config/genesis.json
 
 # Set up cosmovisor
