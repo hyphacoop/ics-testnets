@@ -61,7 +61,7 @@ rm /etc/systemd/system/cv-$NODE_MONIKER.service
 touch /etc/systemd/system/cv-$NODE_MONIKER.service
 
 echo "[Unit]"                               >> /etc/systemd/system/cv-$NODE_MONIKER.service
-echo "Description=Cosmovisor service"       >> /etc/systemd/system/cv-$NODE_MONIKER.servicee
+echo "Description=Cosmovisor service"       >> /etc/systemd/system/cv-$NODE_MONIKER.service
 echo "After=network-online.target"          >> /etc/systemd/system/cv-$NODE_MONIKER.service
 echo ""                                     >> /etc/systemd/system/cv-$NODE_MONIKER.service
 echo "[Service]"                            >> /etc/systemd/system/cv-$NODE_MONIKER.service
