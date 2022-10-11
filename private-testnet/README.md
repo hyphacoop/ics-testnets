@@ -61,6 +61,7 @@ On the node machine:
 
 ### Status
 
+* 2022-10-11: The genesis file has been updated with the CCV states from the provider chain
 * 2022-10-07: Proposal 13 (_Create the pepper consumer chain_) has passed in the provider chain
 * 2022-10-05: The genesis file has been initialized
 
@@ -73,12 +74,16 @@ On the node machine:
   * Built on x86_64 with go v1.18.5
 * Binary hash: `2911bd87cb3ecad2574d82f3874c1f8955856bf80d568f86700905d827c7d41b`
 * **Spawn time: `2022-10-11T15:00:00Z`**
-* **Modified genesis file: `TBA`**
+* **Modified genesis file: `ccv-pepper-genesis.json`**
 * **Persistent peer: `2bd4797ad1812fc7c90737e9ddef38114bd77229@159.89.126.190:26656`**
 
 **❗ The following instructions require a genesis file that has already been updated with the CCV states. This file will not be available until after the SpawnTime is reached.**
 
 ### Join via Ansible Playbook
+
+- You must have SSH access to the node machine.
+- The binary will be set up for the `pepper` user.
+- The binary will run through cosmovisor in the `cv-peppy.service` service.
 
 On your local machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files from your provider chain validator node.
@@ -90,7 +95,9 @@ On your local machine:
 
 ### Join via Bash Script
 
+- This script can be run as `root`.
+- The binary will run through cosmovisor in the `cv-peppy.service` service.
+
 On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files from your provider chain validator node.
 - Run [join-pepper.sh](join-pepper.sh).
-
