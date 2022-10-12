@@ -50,12 +50,11 @@ On your local machine:
 
 ### Join via Bash Script
 
-- This script can be run as `root`.
 - The binary will run through cosmovisor in the `cv-salty.service` service.
 
 On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files from your provider chain validator node.
-- Run [join-salt.sh](join-salt.sh).
+- You can run [join-salt.sh](join-salt.sh) as root, or [join-salt-non-root.sh](join-salt-non-root.sh) otherwise.
 
 ## `pepper` Consumer Chain
 
@@ -95,9 +94,8 @@ On your local machine:
 
 ### Join via Bash Script
 
-- This script can be run as `root`.
 - The binary will run through cosmovisor in the `cv-peppy.service` service.
 
 On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files from your provider chain validator node.
-- Run [join-pepper.sh](join-pepper.sh).
+- You can run [join-pepper.sh](join-pepper.sh) as root, or [join-pepper-non-root.sh](join-pepper-non-root.sh) otherwise.
