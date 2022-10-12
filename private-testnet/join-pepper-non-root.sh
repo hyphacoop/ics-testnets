@@ -4,14 +4,14 @@
 # You should only have to modify the values in this block
 PRIV_VALIDATOR_KEY_FILE=~/priv_validator_key.json # from provider node
 NODE_KEY_FILE=~/node_key.json # from provider node
-NODE_HOME=~/.isc-salt
-NODE_MONIKER=salty
+NODE_HOME=~/.isc-pepper
+NODE_MONIKER=peppy
 # ***
 
 INTERCHAIN_SECURITY_VERSION=v0.1.4
-CHAIN_ID=salt
-GENESIS_URL="https://raw.githubusercontent.com/hyphacoop/ics-testnets/main/private-testnet/ccv-salt-genesis.json" # must include CCV states
-PERSISTENT_PEERS="2bd4797ad1812fc7c90737e9ddef38114bd77229@68.183.199.144:26656"
+CHAIN_ID=pepper
+GENESIS_URL="https://raw.githubusercontent.com/hyphacoop/ics-testnets/main/private-testnet/ccv-pepper-genesis.json" # must include CCV states
+PERSISTENT_PEERS="2bd4797ad1812fc7c90737e9ddef38114bd77229@159.89.126.190:26656"
 
 # Install make
 echo "Installing make..."
