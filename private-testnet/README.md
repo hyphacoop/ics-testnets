@@ -16,6 +16,7 @@ The genesis file of the consumer chain must be updated with the CCV states from 
 
 **Status**
 
+* 2022-10-12: The `salt` chain was started and connected to the provider chain over IBC.
 * 2022-10-11: The genesis file has been updated with the CCV states from the provider chain
 * 2022-10-07: Proposal 12 (_Create the salt consumer chain_) has passed in the provider chain
 * 2022-10-05: The genesis file has been initialized
@@ -60,6 +61,8 @@ On the node machine:
 
 ### Status
 
+* 2022-10-26: The IBC relayer between the `pepper` and provider chain has been stopped.
+* 2022-10-12: The `pepper` chain was started and connected to the provider chain over IBC.
 * 2022-10-11: The genesis file has been updated with the CCV states from the provider chain
 * 2022-10-07: Proposal 13 (_Create the pepper consumer chain_) has passed in the provider chain
 * 2022-10-05: The genesis file has been initialized
