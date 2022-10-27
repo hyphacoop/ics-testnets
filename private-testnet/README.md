@@ -12,6 +12,25 @@ The genesis file of the consumer chain must be updated with the CCV states from 
 
 > See the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details.
 
+## `sugar` Consumer Chain
+
+**Status**
+
+* 2022-10-27: The genesis file has been initialized
+
+### Details
+
+* Fresh genesis file: `fresh-sugar-genesis.json`
+* Fresh genesis hash: `a0ceff8881b7c96778231df64e19a32c0ba9347cb8e83b6f847869fe79a3436d`
+* Binary: `neutrond` ([Linux amd64 build](https://github.com/neutron-org/neutron/raw/feat/interchain-security-with-governance/neutrond), [interchain-security-with-governance branch](https://github.com/neutron-org/neutron/tree/feat/interchain-security-with-governance))
+* Binary hash: `170da8c01aefc1772447fbb3c9d76661ad568b3ab16e93e6a0996f999c5d8ae5`
+* Denom: `grain`
+* Bech32 prefix: `neutron`
+* **Spawn time: `2022-10-31T14:00:00Z`**
+* **Modified genesis file: `TBD`**
+* **Persistent peer: `2bd4797ad1812fc7c90737e9ddef38114bd77229@159.203.29.24:26656`**
+
+
 ## `salt` Consumer Chain
 
 **Status**
