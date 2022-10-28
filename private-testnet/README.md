@@ -27,9 +27,32 @@ The genesis file of the consumer chain must be updated with the CCV states from 
 * Denom: `grain`
 * Bech32 prefix: `neutron`
 * **Spawn time: `2022-10-31T14:00:00Z`**
-* **Modified genesis file: `TBD`**
+* **Modified genesis file: `ccv-sugar-genesis.json`**
 * **Persistent peer: `2bd4797ad1812fc7c90737e9ddef38114bd77229@159.203.29.24:26656`**
 
+**❗ The following instructions require a genesis file that has already been updated with the CCV states. This file will not be available until after the SpawnTime is reached.**
+
+### Join via Ansible Playbook
+
+- You must have SSH access to the node machine.
+- The binary will be set up for the `sugar` user.
+- The binary will run through cosmovisor in the `cv-sugary.service` service.
+
+On your local machine:
+- Copy the `node_key.json` and `priv_validator_key.json` files from your provider chain validator node.
+- Clone the [cosmos-ansible](https://github.com/hyphacoop/cosmos-ansible) repo.
+- Run the playbook from the [sugar Consumer Chain](https://github.com/hyphacoop/cosmos-ansible/tree/main/examples#sugar-consumer-chain) example:
+  ```bash
+  ansible-playbook node.yml -i examples/inventory-join-sugar.yml -e 'target=<host address> node_key_file=<JSON file path> priv_validator_key_file=<JSON file path>"'
+  ```
+
+### Join via Bash Script
+
+- The binary will run through cosmovisor in the `cv-sugary.service` service.
+
+On the node machine:
+- Copy the `node_key.json` and `priv_validator_key.json` files from your provider chain validator node.
+- You can run [join-sugar.sh](join-sugar.sh) as root, or [join-sugar-non-root.sh](join-sugar-non-root.sh) otherwise.
 
 ## `salt` Consumer Chain
 
