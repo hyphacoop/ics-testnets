@@ -16,6 +16,8 @@ The genesis file of the consumer chain must be updated with the CCV states from 
 
 **Status**
 
+* 2022-10-31: The genesis file has been updated with the CCV states from the provider chain
+* 2022-10-29: Proposal 15 (_Create the sugar consumer chain_) has passed in the provider chain
 * 2022-10-27: The genesis file has been initialized
 
 ### Details
