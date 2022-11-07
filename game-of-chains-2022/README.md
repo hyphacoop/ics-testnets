@@ -22,6 +22,8 @@ We have a number of rewards planned for GoC! Please remember that:
 
 Fill out **[this form](https://interchainsecurity.dev/game-of-chains-2022)** to register in the program. 
 
+A form will be made available in the Discord channel to request faucet tokens in the provider chain.
+
 ### Joining the Testnet
 
 * [Provider chain information](provider/README.md)
@@ -57,8 +59,6 @@ A leaderboard with validator standings will be available at https://interchainse
 💬 Testnet coordinators will be available in the Discord channel **#⛓・game-of-chains**.
 
 ### Token Distribution and Delegation
-
-A faucet will be made be available for participants to get enough funds to create a validator in the provider chain.
 
 Testnet coordinators will operate a validator that maintains the majority of the voting power through phases 1 and 2 in to provide liveness and make sure planned proposals pass. This validator will redistribute its staked tokens at the beginning of phase 3 to simulate a more real-world scenario.
 
