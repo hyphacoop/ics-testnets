@@ -32,20 +32,20 @@ Contents
 
 * **p2p seed : `7a86ddc92f56e77a26c4fb4d543412f7175a7c9b@143.198.45.140:26656`**
 * Sentry 1
-  * RPC: https://rpc.provider-sentry-01.gov.earthball.xyz
-  * P2P: https://p2p.provider-sentry-01.gov.earthball.xyz
-  * API: https://rest.provider-sentry-01.gov.earthball.xyz
-  * gRPC: https://grpc.provider-sentry-01.gov.earthball.xyz
+  * RPC: https://rpc.provider-sentry-01.goc.earthball.xyz
+  * P2P: https://p2p.provider-sentry-01.goc.earthball.xyz
+  * API: https://rest.provider-sentry-01.goc.earthball.xyz
+  * gRPC: https://grpc.provider-sentry-01.goc.earthball.xyz
 * Sentry 2
-  * RPC: https://rpc.provider-sentry-02.gov.earthball.xyz
-  * P2P: https://p2p.provider-sentry-02.gov.earthball.xyz
-  * API: https://rest.provider-sentry-02.gov.earthball.xyz
-  * gRPC: https://grpc.provider-sentry-02.gov.earthball.xyz
+  * RPC: https://rpc.provider-sentry-02.goc.earthball.xyz
+  * P2P: https://p2p.provider-sentry-02.goc.earthball.xyz
+  * API: https://rest.provider-sentry-02.goc.earthball.xyz
+  * gRPC: https://grpc.provider-sentry-02.goc.earthball.xyz
 * Seed
-  * RPC: https://rpc.provider-seed-01.gov.earthball.xyz
-  * P2P: https://p2p.provider-seed-01.gov.earthball.xyz
-  * API: https://rest.provider-seed-01.gov.earthball.xyz
-  * gRPC: https://grpc.provider-seed-01.gov.earthball.xyz
+  * RPC: https://rpc.provider-seed-01.goc.earthball.xyz
+  * P2P: https://p2p.provider-seed-01.goc.earthball.xyz
+  * API: https://rest.provider-seed-01.goc.earthball.xyz
+  * gRPC: https://grpc.provider-seed-01.goc.earthball.xyz
 
 ## Join via Ansible Playbook
 
