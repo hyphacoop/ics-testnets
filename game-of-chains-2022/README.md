@@ -97,7 +97,7 @@ Phase tasks:
 
 Sputnik will be the first attempt to start a consumer chain, with the aim of keeping it online for the duration of the testnet program. The binary for this chain will be a stripped-down version of a Cosmos SDK chain with only the essential components needed to function.
 
-Apollo will start shortly after Sputnik, and it will use the same binary. The Apollo chain will be stopped via governance proposal in the following phase.
+Apollo will start shortly after Sputnik, and it will use the same `interchain-security` repo branch. The Apollo chain will be stopped via governance proposal in the following phase.
 
 Testnet coordinators will submit the create chain proposals and distribute the necessary files and data prior to and following the spawn time:
 
