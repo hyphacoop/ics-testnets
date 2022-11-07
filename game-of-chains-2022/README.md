@@ -27,6 +27,8 @@ A form will be made available in the Discord channel to request faucet tokens in
 ### Joining the Testnet
 
 * [Provider chain information](provider/README.md)
+* [Sputnik chain information](sputnik/README.md)
+* [Apollo chain information](apollo/README.md)
 
 ## Overview
 
