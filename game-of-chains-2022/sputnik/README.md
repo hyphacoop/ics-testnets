@@ -8,9 +8,9 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-10: Spawn time: `2022-11-10T15:00:00.000000Z`
-  * 2022-11-09: Proposal 2 voting period ends
-  * 2022-11-07: Proposal 2 goes into voting period
+  * 2022-11-10: Spawn time: `2022-11-10T14:00:00.000000Z`
+  * 2022-11-09: Proposal 1 voting period ends
+  * 2022-11-07: Proposal 1 goes into voting period
   * 2022-11-07: Chain initialized
 
 Sputnik will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
