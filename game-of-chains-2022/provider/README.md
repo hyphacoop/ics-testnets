@@ -23,7 +23,7 @@ Contents
   * [glnro/ics-sdk45 branch](https://github.com/jtremback/gaia/tree/glnro/ics-sdk45)
   * Commit 84a33e4910abcc157f3333a70918a4fd6dc4cf6d
 * Binary SHA256: `02e3d748d851f6ce935f1074307ebfa83f40a417ad6668928f7aa28d4149c671`
-* Genesis file: [`provider-genesis.json`](provider-genesis.json)
+* Genesis file: [provider-genesis.json](https://raw.githubusercontent.com/hyphacoop/ics-testnets/main/game-of-chains-2022/provider/provider-genesis.json)
 * Chain ID: `provider`
 * Denom: `uprov`
 * Bech32 prefix: `cosmos`
