@@ -1,7 +1,3 @@
----
-tags: game-of-chains
----
-
 ![Game of Chains logo](https://i.imgur.com/0yIcvUg.jpg)
 
 # Game of Chains
