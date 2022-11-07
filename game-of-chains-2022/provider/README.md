@@ -30,7 +30,7 @@ Contents
 
 ## Endpoints
 
-* **p2p seed : `7a86ddc92f56e77a26c4fb4d543412f7175a7c9b@143.198.45.140:26656`**
+* **p2p seeds : `7a86ddc92f56e77a26c4fb4d543412f7175a7c9b@143.198.45.140:26656,8372500f2d1dfdcfbf9f0eccceb5e98d37f07b80@tenderseed.ccvalidators.com:29009`**
 * Sentry 1
   * RPC: https://rpc.provider-sentry-01.goc.earthball.xyz
   * P2P: https://p2p.provider-sentry-01.goc.earthball.xyz
