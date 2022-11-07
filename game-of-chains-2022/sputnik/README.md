@@ -10,6 +10,16 @@ Contents
 * Timeline
   * 2022-11-07: Chain initialized
 
+Sputnik will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
+
+The following items will be included in the proposal:
+* Genesis file hash
+  * The SHA256 is used to verify against the genesis file that the proposer has made available for review.
+  * This "fresh" genesis file cannot be used to run the chain: it must be updated with the CCV states after the spawn time is reached.
+* Binary hash
+* Spawn time
+  * Even if the proposal passes, the CCV states will not be available from the provider chain until the spawn time is reached.
+
 ## Chain Data
 
 * **Binary: `interchain-security-cd`**
