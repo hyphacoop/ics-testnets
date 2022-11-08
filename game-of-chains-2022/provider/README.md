@@ -12,7 +12,9 @@ Contents
 
 ## Status
 
-* Provider chain [block explorer](https://provider-explorer.goc.earthball.xyz)
+* Provider chain 
+  - [block explorer](https://provider-explorer.goc.earthball.xyz)
+  - [Ping Dashboard](https://testnet.ping.pub/provider)
 * Timeline
   * 2022-11-07: Chain started
 
