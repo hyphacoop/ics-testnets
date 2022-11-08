@@ -63,8 +63,8 @@ On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
   - **These should be the same ones as the ones from your provider node**.
 - Run one of the following scripts:
-  - Apollo service: [apollo-peer-init.sh](apollo-peer-init.sh)
-  - Cosmovisor service: [apollo-peer-init-cv.sh](apollo-peer-init-cv.sh)
+  - Apollo service: [apollo-init.sh](apollo-init.sh)
+  - Cosmovisor service: [apollo-init-cv.sh](apollo-init-cv.sh)
 - Wait until the spawn time is reached and the genesis file with the CCV states is available.
 - Overwrite the genesis file with the one that includes the CCV states.
   - The default location is `$HOME/.apollo/config/genesis.json`.
