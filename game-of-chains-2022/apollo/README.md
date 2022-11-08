@@ -41,6 +41,7 @@ The following items will be included in the proposal:
 
 On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
+  - **These should be the same ones as the ones from your provider node**.
 - Run one of the following scripts:
   - Sputnik service: [apollo-peer-init.sh](apollo-peer-init.sh)
   - Cosmovisor service: [apollo-peer-init-cv.sh](apollo-peer-init-cv.sh)
