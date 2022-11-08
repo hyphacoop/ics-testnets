@@ -4,7 +4,7 @@ The process we are following to start the consumer chains is as follows:
 1. Initialize the consumer chain genesis file
 2. Generate a hash for the consumer chain binary and genesis file.
 3. Submit a `create-consumer-chain` gov proposal that lists these hashes on the provider chain.
-4. After the SpawnTime passes, collect the CCV states in the provider chain.
+4. After the SpawnTime passes, collect the CCV (Cross Chain Validation) states in the provider chain.
 5. Update the consumer chain genesis file with the CCV states.
 6. Run the consumer chain binary.
 7. Setup an IBC channel between the provider chain and the consumer chain using the Hermes relayer.
