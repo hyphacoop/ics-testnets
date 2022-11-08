@@ -32,7 +32,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 
 # or install from source
 # echo "Installing build-essential..."
-# apt install build-essential -y
+# sudo apt install build-essential -y
 # echo "Installing Gaia..."
 # rm -rf gaia
 # git clone https://github.com/jtremback/gaia.git
@@ -96,7 +96,7 @@ sudo systemctl restart systemd-journald
 
 # Add go and gaiad to the path
 echo "Setting up paths for go and cosmovisor current bin..."
-echo "export PATH=$PATH:/usr/local/go/bin:$NODE_HOME/cosmovisor/genesis/current/bin" >> .profile
+echo "export PATH=$PATH:/usr/local/go/bin:$NODE_HOME/cosmovisor/current/bin" >> .profile
 
 echo "***********************"
 echo "To see the Cosmovisor log enter:"
