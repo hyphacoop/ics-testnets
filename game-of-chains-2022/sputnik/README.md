@@ -32,3 +32,29 @@ The following items will be included in the proposal:
 * Chain ID: `sputnik`
 * Denom: `unik`
 * Bech32 prefix: `cosmos`
+
+## Endpoints
+
+* **p2p persistent peers : `4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@46.101.106.107:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@134.209.255.244:26656`**
+
+## Join via Bash Script
+
+On the node machine:
+- Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
+- Run one of the following scripts:
+  - Sputnik service: [sputnik-peer-init.sh](sputnik-peer-init.sh)
+  - Cosmovisor service: [sputnik-peer-init-cv.sh](sputnik-peer-init-cv.sh)
+- Wait until the spawn time is reached and the genesis file with the CCV states is available.
+- Overwrite the genesis file with the one that includes the CCV states.
+  - The default location is `$HOME/.sputnik/config/genesis.json`.
+- Enable and start the service:
+  - Sputnik
+    ```
+    sudo systemctl enable sputnik
+    sudo systemctl start sputnik
+    ```
+  - Cosmovisor
+    ```
+    sudo systemctl enable cv-sputnik
+    sudo systemctl start cv-sputnik
+    ```
