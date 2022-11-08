@@ -64,8 +64,8 @@ On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
   - **These should be the same ones as the ones from your provider node**.
 - Run one of the following scripts:
-  - Sputnik service: [sputnik-init.sh](sputnik-peer-init.sh)
-  - Cosmovisor service: [sputnik-init-cv.sh](sputnik-peer-init-cv.sh)
+  - Sputnik service: [sputnik-init.sh](sputnik-init.sh)
+  - Cosmovisor service: [sputnik-init-cv.sh](sputnik-init-cv.sh)
 - Wait until the spawn time is reached and the genesis file with the CCV states is available.
 - Overwrite the genesis file with the one that includes the CCV states.
   - The default location is `$HOME/.sputnik/config/genesis.json`.
