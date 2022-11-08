@@ -44,17 +44,18 @@ The genesis file with was generated using the following settings:
 
 * Chain ID: `apollo`
 * Denom: `upol`
-
-Two additional genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-
+* Signed blocks window: `"8640"`
+* Two additional genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
 * Genesis file without CCV state: [`apollo-fresh-genesis.json`](apollo-fresh-genesis.json), SHA256: `978853b8e0f57f352916d7c4c5e9226b0e74b2a9f1292a0adcea2aa681c58c40`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
 
 * **p2p persistent peers : `4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@104.248.161.33:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@178.62.105.39:26656`**
-  * These peers will go live shortly after spawn time.
-  * The coordinator validator will not start
+* These peers represent the `goc-coordinator` and `goc-backup` validators (run by the testnet coordinators). 
+* The `goc-backup` validator node will be running on Apollo shortly after the genesis file that includes the CCV state (Cross Chain Validation state) has been published.
+* The `goc-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `goc-coordinator` is live, the chain will progress.
+* Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
 ## Join via Bash Script
 
@@ -62,7 +63,7 @@ On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
   - **These should be the same ones as the ones from your provider node**.
 - Run one of the following scripts:
-  - Sputnik service: [apollo-peer-init.sh](apollo-peer-init.sh)
+  - Apollo service: [apollo-peer-init.sh](apollo-peer-init.sh)
   - Cosmovisor service: [apollo-peer-init-cv.sh](apollo-peer-init-cv.sh)
 - Wait until the spawn time is reached and the genesis file with the CCV states is available.
 - Overwrite the genesis file with the one that includes the CCV states.

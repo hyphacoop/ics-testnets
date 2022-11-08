@@ -44,15 +44,19 @@ The genesis file with was generated using the following settings:
 
 * Chain ID: `sputnik`
 * Denom: `unik`
-
-Two additional genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-
+* Signed blocks window: `"8640"`
+* Two additional genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
 * Genesis file without CCV state: [`sputnik-fresh-genesis.json`](sputnik-fresh-genesis.json), SHA256: `ec5f03d8d3be2fbd3e8bd87c113379b671c300eeb8295863f785237e020040a9`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
 
 * **p2p persistent peers : `4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@46.101.106.107:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@134.209.255.244:26656`**
+* These peers represent the `goc-coordinator` and `goc-backup` validators (run by the testnet coordinators). 
+* The `goc-backup` validator node will be running on Sputnik shortly after the genesis file that includes the CCV state (Cross Chain Validation state) has been published.
+* The `goc-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `goc-coordinator` is live, the chain will progress.
+* Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
+
 
 ## Join via Bash Script
 
