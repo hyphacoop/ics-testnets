@@ -80,3 +80,7 @@ On the node machine:
     sudo systemctl enable cv-sputnik
     sudo systemctl start cv-sputnik
     ```
+- To follow the log, use:
+  - Sputnik: `journalctl -fu sputnik`
+  - Cosmovisor: `journalctl -fu cv-sputnik`
+- If the log does not show up right away, run `systemctl restart systemd-journald`.
