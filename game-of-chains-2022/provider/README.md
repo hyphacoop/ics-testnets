@@ -20,6 +20,10 @@ Contents
 
 ## Chain Data
 
+**-- ATTENTION --**  
+**-- 2022-11-09 21:18 UTC --**  
+**We are expecting a new version of the provider chain binary to fix a critical Interchain Security-related bug. New version expected on Nov 10 at the earliest.**
+
 * Binary: `gaiad`
   * [Linux amd64 build](gaiad)
   * [glnro/ics-sdk45 branch](https://github.com/jtremback/gaia/tree/glnro/ics-sdk45)

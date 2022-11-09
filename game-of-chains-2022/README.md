@@ -81,7 +81,7 @@ Testnet coordinators will operate a validator that maintains the majority of the
 - Testnet coordinators will submit proposals to create two consumer chains.
 - Validators will vote yes on the proposals and run the consumer chain binaries.
 - Testnet coordinators will run the relayer between provider and consumer chains.
-- **Duration: 4 days**
+- **Duration: 5 days**
 
 Phase tasks:
 
@@ -93,7 +93,7 @@ Phase tasks:
 
 #### Round 1: Start the Sputnik and Apollo Consumer Chains
 
-**Nov 7-10**
+**Nov 7-11**
 
 Sputnik will be the first attempt to start a consumer chain, with the aim of keeping it online for the duration of the testnet program. The binary for this chain will be a stripped-down version of a Cosmos SDK chain with only the essential components needed to function.
 
