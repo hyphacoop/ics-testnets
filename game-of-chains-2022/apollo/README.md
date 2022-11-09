@@ -79,3 +79,7 @@ On the node machine:
     sudo systemctl enable cv-apollo
     sudo systemctl start cv-apollo
     ```
+- To follow the log, use:
+  - Apollo: `journalctl -fu apollo`
+  - Cosmovisor: `journalctl -fu cv-apollo`
+- If the log does not show up right away, run `systemctl restart systemd-journald`.
