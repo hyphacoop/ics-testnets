@@ -8,6 +8,7 @@ Contents
 ## Status
 
 * Timeline
+  * 2022-11-11: The `goc-coordinator` validator will start signing on Sputnik at `2022-11-11T14:00:00.000000Z`.
   * 2022-11-10: Spawn time: `2022-11-10T14:00:00.000000Z`
   * 2022-11-09: Proposal 1 voting period ends
   * 2022-11-07: Proposal 1 goes into voting period
