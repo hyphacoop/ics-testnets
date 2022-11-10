@@ -51,6 +51,9 @@ echo "Replacing keys and genesis file..."
 cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
+# Reset state
+$CHAIN_BINARY tendermint unsafe-reset-all --home $NODE_HOME
+
 # Set up cosmovisor
 echo "Setting up cosmovisor..."
 mkdir -p $NODE_HOME/cosmovisor/genesis/bin
