@@ -64,7 +64,7 @@ On your local machine:
 - Clone the [cosmos-ansible](https://github.com/hyphacoop/cosmos-ansible) repo.
 - Run the playbook from the [Join the Provider Chain](https://github.com/hyphacoop/cosmos-ansible/tree/main/game-of-chains-2022#join-the-provider-chain) section:
   ```bash
-  ansible-playbook node.yml -i goc-2022/provider/provider-join.yml -e 'target=<host address> node_key_file=<JSON file path> priv_validator_key_file=<JSON file path>"'
+  ansible-playbook node.yml -i game-of-chains-2022/provider/provider-join.yml -e 'target=<host address> node_key_file=<JSON file path> priv_validator_key_file=<JSON file path>"'
   ```
 
 ## Join via Bash Script
