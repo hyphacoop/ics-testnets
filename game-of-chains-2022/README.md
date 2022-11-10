@@ -26,6 +26,11 @@ A form will be made available in the Discord channel to request faucet tokens in
 
 ### Joining the Testnet
 
+## ⛔ ATTENTION ⛔
+
+- **2022-11-10 13:00 UTC**
+  - The gaiad version used to launch the provider chain is now considered to be deprecated. Visit the provider [chain data](provider/README.md#chain-data) section for additional information about the current gaiad version.
+
 * [Provider chain information](provider/README.md)
 * [Sputnik chain information](sputnik/README.md)
 * [Apollo chain information](apollo/README.md)
