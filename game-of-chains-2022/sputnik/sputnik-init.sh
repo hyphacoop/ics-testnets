@@ -51,6 +51,9 @@ echo "Replacing keys and genesis file..."
 cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
+# Reset state
+$CHAIN_BINARY tendermint unsafe-reset-all --home $NODE_HOME
+
 sudo rm /etc/systemd/system/$NODE_MONIKER.service
 sudo touch /etc/systemd/system/$NODE_MONIKER.service
 
