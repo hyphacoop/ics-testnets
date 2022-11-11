@@ -117,7 +117,7 @@ Testnet coordinators will submit the create chain proposals and distribute the n
 - Testnet coordinators will submit two proposals to create additional consumer chains and one proposal to stop one of them.
 - Validators will vote yes on proposals and run the consumer chain binaries.
 - Testnet coordinators will run relayers between provider and consumer chains.
-- **Duration: 9 days**
+- **Duration: TBD**
 
 Phase tasks
 
@@ -133,19 +133,14 @@ Phase tasks
 
 #### Round 2: Start the Neutron Consumer Chain
 
-**Day 4-8**
 
 #### Round 3: Start the Duality Consumer Chain
 
-**Day 8-10**
 
 #### Round 4: Start the Stride Consumer Chain
 
-**Day 9-11**
 
 #### Round 5: Stop the Apollo Consumer Chain
-
-**Day 10-12**
 
 Testnet coordinators will submit a proposal to stop the Apollo chain.
 
@@ -169,8 +164,6 @@ Phase tasks:
 
 #### Round 6: Proposal Due Diligence
 
-**Day 15-19**
-
 Testnet coordinators will submit several proposals to create consumer chains:
 - Some proposals may be erroneous.
 - Some binaries related to these proposals will be malicious.
@@ -179,24 +172,17 @@ It will be up to the validators to review the proposals and reject the bad ones!
 
 #### Round 7: Start Validator Consumer Chains
 
-**Day 15-24**
-
 Validators will start any number of additional consumer chains. This will require some engagement and coordination with other participants, besides submitting proposals and (optionally) preparing custom binaries.
 
 Validators will be responsible for running relayers between the provider and consumer chains.
 
 #### Round 8: Stop Validator Consumer Chains
 
-**Day 17-24**
-
 Validators will be in charge of stopping consumer chains.
 
 #### Round 9: Stop the Sputnik Consumer Chain
 
-**Day 24-24**
-
 Testnet coordinators will turn off the relayer between the provider and Sputnik chains. The IBC client will expire and reach the timeout period, causing the Sputnik chain to stop.
-
 
 ## Points System
 
