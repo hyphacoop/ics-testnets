@@ -292,3 +292,15 @@ The following behaviour will result in participants being disqualified from Game
 * Attacking any testnet other than the Game of Chains one.
 * Causing long-term harm to a validator setup.
 * Exploiting application-level security vulnerabilities in Cosmos and Tendermint code.
+
+## Acknowledgements
+
+A number of people have helped us update and improve this repo. Our sincere thanks to the following contributors:
+
+* [Chris Remus](https://github.com/chris-remus)
+* [CryptoCrew Validators](https://github.com/clemensgg)
+* [Jacob Gadikian](https://github.com/faddat)
+* [valNodeOne](https://github.com/valNodeOne)
+* [danb](https://github.com/danbryan)
+* [ping](https://github.com/liangping)
+* [james.](https://github.com/reversesigh)
