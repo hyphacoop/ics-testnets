@@ -52,6 +52,7 @@ The genesis file with was generated using the following settings:
 
 ## Endpoints
 
+* **p2p seeds : `3aed29ec1ca96ea52299748c50bf7d908511068f@tenderseed.ccvalidators.com:29019`**
 * **p2p persistent peers : `4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@46.101.106.107:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@134.209.255.244:26656`**
 * These peers represent the `goc-coordinator` and `goc-backup` validators (run by the testnet coordinators). 
 * The `goc-backup` validator node will be running on Sputnik shortly after the genesis file that includes the CCV state (Cross Chain Validation state) has been published.
