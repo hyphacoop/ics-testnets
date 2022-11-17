@@ -34,6 +34,7 @@ A form will be made available in the Discord channel to request faucet tokens in
 * [Provider chain information](provider/README.md)
 * [Sputnik chain information](sputnik/README.md)
 * [Apollo chain information](apollo/README.md)
+* [Hero chain information](hero/README.md)
 
 ## Overview
 
@@ -61,7 +62,7 @@ Testnet coordinators will make the following support services available for the 
 - Faucets
 - Consensus monitors
 
-A leaderboard with validator standings will be available at https://interchainsecurity.dev/game-of-chains-2022.
+A leaderboard with validator standings will be available at https://interchainsecurity.dev/game-of-chains-2022#scoreboard.
 
 💬 Testnet coordinators will be available in the Discord channel **#⛓・game-of-chains**.
 
@@ -76,7 +77,7 @@ Testnet coordinators will operate a validator that maintains the majority of the
 1. The final number of points awarded to each participant is at the discretion of the testnet jury.
 2. The timeline for all phases and rounds may change depending on the outcome of previous activities.
 3. Available tasks and points may be adjusted during the course of the testnet program.
-4. All evidence submitted for points must be sent through https://interchainsecurity.dev.
+4. All evidence submitted for points must be sent through https://interchainsecurity.dev/game-of-chains-2022#evidence-form.
 
 ## Timeline
 
@@ -117,22 +118,34 @@ Testnet coordinators will submit the create chain proposals and distribute the n
 - Testnet coordinators will submit two proposals to create additional consumer chains and one proposal to stop one of them.
 - Validators will vote yes on proposals and run the consumer chain binaries.
 - Testnet coordinators will run relayers between provider and consumer chains.
-- **Duration: TBD**
 
 Phase tasks
 
+* 🔎 26. Vote on the Hero `create-consumer-chain` proposal (1 point)
 * 🔎 3. Vote on the Neutron `create-consumer-chain` proposal (1 point)
 * 🔎 4. Vote on the Duality `create-consumer-chain` proposal (1 point)
 * 🔎 5. Vote on the Stride `create-consumer-chain` proposal (1 point)
 * 🔎 6. Vote on the Apollo `stop-consumer-chain` proposal (1 point)
+* 👷 27. Sign on the first block of the Neutron chain (1 point)
 * 👷 13. Sign on the first block of the Neutron chain (1 point)
 * 👷 14. Sign on the first block of the Duality chain (1 point)
 * 👷 15. Sign on the first block of the Stride chain (1 point)
 * 👷 16. Sign on the last block of the Apollo chain without having been jailed for downtime since the first block (1 point)
-* **8 points maximum**
+* **10 points maximum**
 
-#### Round 2: Start the Neutron Consumer Chain
+#### Round 2: Start the Hero Consumer Chain
 
+**Nov 17-21**
+
+Hero chain is a consumer chain testing out a new custom minting module.
+
+Testnet coordinators will submit the create chain proposal and distribute the necessary files and data prior to and following the spawn time:
+
+- Guides for joining
+- Binary file
+- Genesis file
+- Peer addresses
+- Faucet address
 
 #### Round 3: Start the Duality Consumer Chain
 
@@ -149,7 +162,6 @@ Testnet coordinators will submit a proposal to stop the Apollo chain.
 - Validators will submit proposals and coordinate with each other to start and stop consumer chains.
 - Validators will operate relayers.
 - Testnet coordinators will submit proposals that may be incorrect or point to malicious binaries.
-- **Duration: 10 days**
 
 Phase tasks:
 
@@ -159,8 +171,8 @@ Phase tasks:
 * 👷 18. Create at least one custom consumer chain binary for a proposal that passes (5 points)
 * 👷 19. Submit at least one `create-consumer-chain` proposal for a chain that starts (5 points)
 * 👷 20. Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified height (5 points)
-* 👷 21. Run a relayer between a provider and consumer chain that relays at least 500 validator set changes (10 points)
-* **30 points maximum**
+* 👷 21. Run a relayer between a provider and consumer chain that relays at least 500 validator set changes (20 points)
+* **40 points maximum**
 
 #### Round 6: Proposal Due Diligence
 
