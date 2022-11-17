@@ -8,7 +8,7 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-17: Proposal 1 goes into voting period
+  * 2022-11-17: Proposal goes into voting period
   * 2022-11-16: Chain initialized
 
 Hero will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
