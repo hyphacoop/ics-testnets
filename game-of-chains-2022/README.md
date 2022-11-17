@@ -122,15 +122,15 @@ Testnet coordinators will submit the create chain proposals and distribute the n
 Phase tasks
 
 * 🔎 26. Vote on the Hero `create-consumer-chain` proposal (1 point)
-* 🔎 3. Vote on the Neutron `create-consumer-chain` proposal (1 point)
-* 🔎 4. Vote on the Duality `create-consumer-chain` proposal (1 point)
-* 🔎 5. Vote on the Stride `create-consumer-chain` proposal (1 point)
-* 🔎 6. Vote on the Apollo `stop-consumer-chain` proposal (1 point)
-* 👷 27. Sign on the first block of the Neutron chain (1 point)
-* 👷 13. Sign on the first block of the Neutron chain (1 point)
-* 👷 14. Sign on the first block of the Duality chain (1 point)
-* 👷 15. Sign on the first block of the Stride chain (1 point)
-* 👷 16. Sign on the last block of the Apollo chain without having been jailed for downtime since the first block (1 point)
+* 🔎 3. Vote on the Neutron `create-consumer-chain` proposal (1 point) **TBA**
+* 🔎 4. Vote on the Duality `create-consumer-chain` proposal (1 point) **TBA**
+* 🔎 5. Vote on the Stride `create-consumer-chain` proposal (1 point) **TBA**
+* 🔎 6. Vote on the Apollo `stop-consumer-chain` proposal (1 point) **TBA**
+* 👷 27. Sign on the first block of the Hero chain (1 point) **TBA**
+* 👷 13. Sign on the first block of the Neutron chain (1 point) **TBA**
+* 👷 14. Sign on the first block of the Duality chain (1 point) **TBA**
+* 👷 15. Sign on the first block of the Stride chain (1 point) **TBA**
+* 👷 16. Sign on the last block of the Apollo chain without having been jailed for downtime since the first block (1 point) **TBA**
 * **10 points maximum**
 
 #### Round 2: Start the Hero Consumer Chain
@@ -149,11 +149,11 @@ Testnet coordinators will submit the create chain proposal and distribute the ne
 
 #### Round 3: Start the Duality Consumer Chain
 
+#### Round 4: Start the Duality Consumer Chain
 
-#### Round 4: Start the Stride Consumer Chain
+#### Round 5: Start the Stride Consumer Chain
 
-
-#### Round 5: Stop the Apollo Consumer Chain
+#### Round 6: Stop the Apollo Consumer Chain
 
 Testnet coordinators will submit a proposal to stop the Apollo chain.
 
@@ -174,7 +174,7 @@ Phase tasks:
 * 👷 21. Run a relayer between a provider and consumer chain that relays at least 500 validator set changes (20 points)
 * **40 points maximum**
 
-#### Round 6: Proposal Due Diligence
+#### Round 7: Proposal Due Diligence
 
 Testnet coordinators will submit several proposals to create consumer chains:
 - Some proposals may be erroneous.
@@ -182,17 +182,17 @@ Testnet coordinators will submit several proposals to create consumer chains:
 
 It will be up to the validators to review the proposals and reject the bad ones! None of these proposals should result in a consumer chain starting.
 
-#### Round 7: Start Validator Consumer Chains
+#### Round 8: Start Validator Consumer Chains
 
 Validators will start any number of additional consumer chains. This will require some engagement and coordination with other participants, besides submitting proposals and (optionally) preparing custom binaries.
 
 Validators will be responsible for running relayers between the provider and consumer chains.
 
-#### Round 8: Stop Validator Consumer Chains
+#### Round 9: Stop Validator Consumer Chains
 
 Validators will be in charge of stopping consumer chains.
 
-#### Round 9: Stop the Sputnik Consumer Chain
+#### Round 10: Stop the Sputnik Consumer Chain
 
 Testnet coordinators will turn off the relayer between the provider and Sputnik chains. The IBC client will expire and reach the timeout period, causing the Sputnik chain to stop.
 
@@ -216,6 +216,7 @@ To earn points in the Game of Chains testnet program, you can:
 | 6 | 1 | Vote yes on the Apollo `stop-consumer-chain` proposal | TX hash |
 | 7 | 1 | Vote no on at least one proposal that contains incorrect metadata | TX hash |
 | 8 | 2 | Vote no on at least one proposal that links to malicious binaries | TX hash |
+| 26 | 1 | Vote yes on the Hero `create-consumer-chain` proposal | TX hash |
 
 #### Validator Sets Monitoring
 
@@ -242,6 +243,7 @@ To earn points in the Game of Chains testnet program, you can:
 | 18 | 5 | Create at least one custom consumer chain binary for a proposal that passes   | Source code |
 | 19 | 5 | Submit at least one `create-consumer-chain` proposal for a chain that starts  | TX hash |
 | 20 | 5 | Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified height | TX hash |
+| 27 | 1 | Sign the first block after genesis of the Hero chain | None required* |
 
 * \*For tasks that do not require evidence, testnet coordinators will query the relevant blocks.
 
