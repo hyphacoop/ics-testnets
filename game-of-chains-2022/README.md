@@ -147,7 +147,7 @@ Testnet coordinators will submit the create chain proposal and distribute the ne
 - Peer addresses
 - Faucet address
 
-#### Round 3: Start the Duality Consumer Chain
+#### Round 3: Start the Neutron Consumer Chain
 
 #### Round 4: Start the Duality Consumer Chain
 
