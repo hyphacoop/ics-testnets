@@ -210,6 +210,7 @@ To earn points in the Game of Chains testnet program, you can:
 |---|-----|-----|---|
 | 1 | 1  | Vote yes on the Sputnik `create-consumer-chain` proposal | TX hash |
 | 2 | 1  | Vote yes on the Apollo `create-consumer-chain` proposal | TX hash |
+| 2.5 | 1  | Vote yes on the Hero `create-consumer-chain` proposal | TX hash |
 | 3 | 1  | Vote yes on the Neutron `create-consumer-chain` proposal | TX hash |
 | 4 | 1 | Vote yes on the Duality `create-consumer-chain` proposal | TX hash |
 | 5 | 1 | Vote yes on the Stride `create-consumer-chain` proposal | TX hash |
@@ -235,6 +236,7 @@ To earn points in the Game of Chains testnet program, you can:
 |---|-----|-----|---|
 | 11 | 1 | Sign the first block after genesis of the Sputnik chain | None required* |
 | 12 | 1 | Sign the first block after genesis of the Apollo chain | None required* |
+| 12.5 | 1 | Sign the first block after genesis of the Hero chain | None required* |
 | 13 | 1 | Sign the first block after genesis of the Neutron chain | None required* |
 | 14 | 1 | Sign the first block after genesis of the Duality chain | None required* |
 | 15 | 1 | Sign the first block after genesis of the Stride chain | None required* |
