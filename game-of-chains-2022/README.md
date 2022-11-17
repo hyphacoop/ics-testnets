@@ -126,7 +126,7 @@ Phase tasks
 * 🔎 4. Vote on the Duality `create-consumer-chain` proposal (1 point) **TBA**
 * 🔎 5. Vote on the Stride `create-consumer-chain` proposal (1 point) **TBA**
 * 🔎 6. Vote on the Apollo `stop-consumer-chain` proposal (1 point) **TBA**
-* 👷 27. Sign on the first block of the Hero chain (1 point) **TBA**
+* 👷 27. Sign on the first block of the Hero chain (1 point)
 * 👷 13. Sign on the first block of the Neutron chain (1 point) **TBA**
 * 👷 14. Sign on the first block of the Duality chain (1 point) **TBA**
 * 👷 15. Sign on the first block of the Stride chain (1 point) **TBA**
