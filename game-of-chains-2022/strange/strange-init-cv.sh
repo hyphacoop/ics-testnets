@@ -1,5 +1,5 @@
 #!/bin/bash
-# Set up a cosmovisor service to join the strange chain.
+# Set up a cosmovisor service to join the strange-1 chain.
 
 # Configuration
 # You should only have to modify the values in this block
@@ -11,8 +11,8 @@ NODE_MONIKER=strange
 
 CHAIN_BINARY_URL='https://github.com/hyphacoop/ics-testnets/raw/main/game-of-chains-2022/strange/stranged'
 CHAIN_BINARY='stranged'
-CHAIN_ID=strange
-PERSISTENT_PEERS="4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@104.248.161.33:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@178.62.105.39:26656"
+CHAIN_ID=strange-1
+PERSISTENT_PEERS="4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@128.199.29.137:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@128.199.26.103:26656"
 
 # Install go 1.19.2
 echo "Installing go..."
@@ -21,7 +21,7 @@ wget https://go.dev/dl/go1.19.2.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.2.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
-# Install strange binary
+# Install chain binary
 echo "Installing strange..."
 mkdir -p $HOME/go/bin
 
@@ -32,12 +32,11 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # or install from source
 # echo "Installing build-essential..."
 # sudo apt install build-essential -y
-# rm -rf interchain-security
-# git clone https://github.com/cosmos/interchain-security.git
-# cd interchain-security
-# git checkout tags/v0.2.0
+# rm -rf strange
+# git clone https://github.com/strangelove-ventures/strange.git
+# cd strange
+# git checkout tags/v0.0.1
 # make install
-# mv $HOME/go/bin/stranged $HOME/go/bin/$CHAIN_BINARY
 
 export PATH=$PATH:$HOME/go/bin
 
