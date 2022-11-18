@@ -2,7 +2,7 @@
   "app_hash": "",
   "app_state": {
     "adminmodule": { "admins": [
-        "cosmos10rrplkj8s8z8gvu950aq3qlvrrltxr09r2z5um"
+        "cosmos1xqnf6w60t3shcn5sey75a634w48aky3f4scf5r"
     ] },
     "auth": {
       "accounts": [
@@ -33,6 +33,13 @@
           "address": "cosmos1rhvj25tutkld9p43y6w8pdfhcfzk270dc76tmn",
           "pub_key": null,
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "0",
+          "address": "cosmos1xqnf6w60t3shcn5sey75a634w48aky3f4scf5r",
+          "pub_key": null,
+          "sequence": "0"
         }
       ],
       "params": {
@@ -61,29 +68,13 @@
         {
           "address": "cosmos1rhvj25tutkld9p43y6w8pdfhcfzk270dc76tmn",
           "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
-        }
-      ],
-      "denom_metadata": [
+        },
         {
-          "display": "drachma",
-          "base": "udrachma",
-          "name": "Drachma",
-          "symbol": "Drachma",
-          "denom_units": [
-            {
-              "denom": "udrachma",
-              "aliases": ["microdrachma"],
-              "exponent": "0"
-            },
-            {
-              "denom": "mdrachma",
-              "aliases": ["millidrachma"],
-              "exponent": "3"
-            },
-            { "denom": "drachma", "aliases": null, "exponent": "6" }
-          ]
+          "address": "cosmos1xqnf6w60t3shcn5sey75a634w48aky3f4scf5r",
+          "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
         }
       ],
+      "denom_metadata": [],
       "params": { "default_send_enabled": true, "send_enabled": [] },
       "supply": []
     },
@@ -166,19 +157,6 @@
       },
       "signing_infos": []
     },
-    "tokenfactory": {
-      "admin": { "address": "cosmos10rrplkj8s8z8gvu950aq3qlvrrltxr09r2z5um" },
-      "blacklistedList": [],
-      "blacklister": null,
-      "masterMinter": null,
-      "minterControllerList": [],
-      "mintersList": [],
-      "mintingDenom": { "denom": "udrachma" },
-      "owner": { "address": "cosmos1q4adyc9a75u6eclu6czqtr2vfyqf6v4svwwnyr" },
-      "params": {},
-      "paused": { "paused": false },
-      "pauser": null
-    },
     "transfer": {
       "denom_traces": [],
       "params": { "receive_enabled": true, "send_enabled": true },
@@ -202,6 +180,6 @@
     "validator": { "pub_key_types": ["ed25519"] },
     "version": {}
   },
-  "genesis_time": "2022-11-16T19:59:16.356170496Z",
+  "genesis_time": "2022-11-28T17:00:00.000000000Z",
   "initial_height": "1"
 }
