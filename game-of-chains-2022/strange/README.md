@@ -29,11 +29,23 @@ The following items will be included in the proposal:
 
 ### Binary
 
-The binary published in this repo is the `stranged` binary built using the `strangelove-ventures/strange` repo tag [v0.0.1](https://github.com/strangelove-ventures/strange/releases/tag/v0.0.1). You can generate the binary following the [Get Started section](https://github.com/strangelove-ventures/strange/tree/v0.0.1#get-started).
+The binary published in this repo is the `stranged` binary built using the `strangelove-ventures/strange` repo tag [v0.1.0](https://github.com/strangelove-ventures/strange/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/strangelove-ventures/strange/tree/v0.1.0#get-started).
 
   * [Linux amd64 build](stranged)
   * Version: `HEAD-88538019183c85a6a3f3536d0a88fa13b317dc6d`
-  * SHA256: `6e2faaa896d8f760d9cb74cab651e3f8988be46b0626e676fc62e904c5d63a71`
+  * SHA256: `c7ec53532814cc31e96072a9a65bf6b6aac6ac44475a3518905ae6b43f802b32`
+
+  ```
+  docker run -it --entrypoint /bin/bash ubuntu:22.10
+  ```
+  ```
+  # run inside docker container.
+  apt-get -y update && apt-get install -y make git golang
+  git clone https://github.com/strangelove-ventures/strange.git
+  cd strange
+  make install
+  sha256sum /root/go/bin/stranged
+  ```
 
 ### Genesis file
 
@@ -49,15 +61,14 @@ The genesis file with was generated using the following settings:
 * Denom: `ustrange`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`strange-fresh-genesis.json`](strange-fresh-genesis.json), SHA256: `d59c950fc85f53e4407cb27b53cbc89bf168503ae74a603c33dca02c5e73eb93`
+* Genesis file **without CCV state**: [`strange-fresh-genesis.json`](strange-fresh-genesis.json), SHA256: `4c12def2c3c278f44007453b910da242fef095938e66edd579328e0325565488`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
 
-* **p2p persistent peers : `4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@128.199.29.137:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@128.199.26.103:26656`**
-* These peers represent the `goc-coordinator` and `goc-backup` validators (run by the testnet coordinators). 
-* The `goc-backup` validator node will be running on strange shortly after the genesis file that includes the CCV state (Cross Chain Validation state) has been published.
-* The `goc-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `goc-coordinator` is live, the chain will progress.
+* **p2p persistent peers : `coming-soon`**
+* These peers represent the `strangelove-coordinator`validators (run by the testnet coordinators). 
+* The `strangelove-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `strangelove-coordinator` is live, the chain will progress.
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
 ## Join via Bash Script
