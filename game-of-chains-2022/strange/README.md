@@ -31,21 +31,26 @@ The following items will be included in the proposal:
 
 The binary published in this repo is the `stranged` binary built using the `strangelove-ventures/strange` repo tag [v0.1.0](https://github.com/strangelove-ventures/strange/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/strangelove-ventures/strange/tree/v0.1.0#get-started).
 
+### Verify Binary Checksum.
+Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.
+
   * [Linux amd64 build](stranged)
-  * Version: `HEAD-88538019183c85a6a3f3536d0a88fa13b317dc6d`
-  * SHA256: `c7ec53532814cc31e96072a9a65bf6b6aac6ac44475a3518905ae6b43f802b32`
+  * Version: `v0.1.0`
+  * SHA256: `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`
 
   ```
-  docker run -it --entrypoint /bin/bash ubuntu:22.10
+  docker run -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
   ```
   ```
   # run inside docker container.
-  apt-get -y update && apt-get install -y make git golang
   git clone https://github.com/strangelove-ventures/strange.git
   cd strange
+  git fetch
+  git checkout v0.1.0
   make install
-  sha256sum /root/go/bin/stranged
+  sha256sum ~/go/bin/stranged
   ```
+  expected return `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`
 
 ### Genesis file
 
