@@ -66,7 +66,7 @@ The genesis file with was generated using the following settings:
 * Denom: `ustrange`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`strange-fresh-genesis.json`](strange-fresh-genesis.json), SHA256: `4c12def2c3c278f44007453b910da242fef095938e66edd579328e0325565488`
+* Genesis file **without CCV state**: [`strange-fresh-genesis.json`](strange-fresh-genesis.json), SHA256: `b171ec74d6928afe40407d01908b24f8cd8947bc412710f433f5526b75344521`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
