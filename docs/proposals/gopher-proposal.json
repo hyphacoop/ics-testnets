@@ -1,0 +1,12 @@
+{
+    "title": "Create the Gopher chain",
+    "description": "This is the proposal to create the consumer chain \"gopher\". Visit https://github.com/hyphacoop/ics-testnets/tree/main/game-of-chains-2022/gopher for details on this proposal's data and how to join the chain.",
+    "chain_id": "gopher",
+    "initial_height": {
+        "revision_height": 1
+    },
+    "genesis_hash": "207e88e67805468b0591d61c7f8332a86066d9eb2c03dcd76060d74ebf5f82f2",
+    "binary_hash": "d766cb7f175e2a904b47ed160b0e42525a1bd59c96e975d8085dd72b63b99025",
+    "spawn_time": "2022-11-23T16:00:00.000000Z",
+    "deposit": "1uprov"
+}

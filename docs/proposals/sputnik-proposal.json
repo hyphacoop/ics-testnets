@@ -1,0 +1,12 @@
+{
+    "title": "Create the Sputnik chain",
+    "description": "This is the proposal to create the consumer chain \"sputnik\". Visit https://github.com/hyphacoop/ics-testnets/tree/main/game-of-chains-2022/sputnik for details on this proposal's data and how to join the chain.",
+    "chain_id": "sputnik",
+    "initial_height": {
+        "revision_height": 1
+    },
+    "genesis_hash": "ec5f03d8d3be2fbd3e8bd87c113379b671c300eeb8295863f785237e020040a9",
+    "binary_hash": "982f34f8edae365b6da5f8cb32fbe1f61f0317348663a21b5ebd6b21996760b9",
+    "spawn_time": "2022-11-10T14:00:00.000000Z",
+    "deposit": "1uprov"
+}

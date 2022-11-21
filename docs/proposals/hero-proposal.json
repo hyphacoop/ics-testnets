@@ -1,0 +1,13 @@
+{
+    "title": "Create the Hero chain",
+    "description": "This is the proposal to create the consumer chain \"hero-1\". Visit https://github.com/hyphacoop/ics-testnets/tree/main/game-of-chains-2022/hero for details on this proposal's data and how to join the chain.",
+    "chain_id": "hero-1",
+    "initial_height": {
+        "revision_height": 1,
+        "revision_number": 1
+    },
+    "genesis_hash": "d59c950fc85f53e4407cb27b53cbc89bf168503ae74a603c33dca02c5e73eb93",
+    "binary_hash": "6e2faaa896d8f760d9cb74cab651e3f8988be46b0626e676fc62e904c5d63a71",
+    "spawn_time": "2022-11-21T13:00:00.000000Z",
+    "deposit": "1uprov"
+}

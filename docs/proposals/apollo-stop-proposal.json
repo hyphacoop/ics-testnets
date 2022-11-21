@@ -1,0 +1,7 @@
+{
+    "title": "Stop the Apollo chain",
+    "description": "This is the proposal to stop the consumer chain \"apollo\".",
+    "chain_id": "apollo",
+    "stop_time": "2022-11-23T19:00:00.000000Z",
+    "deposit": "1uprov"
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Create the Neutron chain",
+    "description": "This is the proposal to create the consumer chain \"neutron\". Visit https://github.com/hyphacoop/ics-testnets/tree/main/game-of-chains-2022/neutron for details on this proposal's data and how to join the chain.",
+    "chain_id": "neutron",
+    "initial_height": {
+        "revision_height": 1
+    },
+    "genesis_hash": "b728614990cb97389e784ad45670a03eb40c119f1d7342aae427eb4afb739eb4",
+    "binary_hash": "1eb39959c25c5d6300b4624db882cfa9668aa83d58eed208e0fa28620e7af8ea",
+    "spawn_time": "2022-11-23T15:00:00.000000Z",
+    "deposit": "1uprov"
+}
