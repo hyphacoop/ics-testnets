@@ -151,9 +151,27 @@ Testnet coordinators will submit the create chain proposal and distribute the ne
 
 **Nov 21-23**
 
+Testnet coordinators will submit the create chain proposal and distribute the necessary files and data prior to and following the spawn time:
+
+- Guides for joining
+- Binary file
+- Genesis file
+- Peer addresses
+- Faucet address
+
 #### Round 4: Start the Gopher Consumer Chain
 
 **Nov 21-23**
+
+📢 We are launching the `gopher` chain with the goal of testing `rly` (the `go` relayer). Please do not operate any other relayer (Hermes, etc.) with this chain.
+
+Testnet coordinators will submit the create chain proposal and distribute the necessary files and data prior to and following the spawn time:
+
+- Guides for joining
+- Binary file
+- Genesis file
+- Peer addresses
+- Faucet address
 
 #### Round 5: Stop the Apollo Consumer Chain
 
