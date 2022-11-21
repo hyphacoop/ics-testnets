@@ -29,7 +29,7 @@ The following items will be included in the proposal:
 
 ### Binary
 
-The binary published in this repo is the `stranged` binary built using the `strangelove-ventures/strange` repo tag [v0.1.0](https://github.com/strangelove-ventures/strange/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/strangelove-ventures/strange/tree/v0.1.0#get-started).
+The binary published in this repo is the `stranged` binary built using the `strangelove-ventures/strange` repo tag [v0.1.0](https://github.com/strangelove-ventures/strange/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/strangelove-ventures/strange/tree/v0.1.0#get-started). Docker images are available [here](https://github.com/strangelove-ventures/heighliner/pkgs/container/heighliner%2Fstrange).
 
 ### Verify Binary Checksum.
 Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.

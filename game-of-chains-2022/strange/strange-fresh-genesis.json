@@ -2,24 +2,10 @@
   "app_hash": "",
   "app_state": {
     "adminmodule": { "admins": [
-        "cosmos10rrplkj8s8z8gvu950aq3qlvrrltxr09r2z5um"
+        "cosmos1xqnf6w60t3shcn5sey75a634w48aky3f4scf5r"
     ] },
     "auth": {
       "accounts": [
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "cosmos1q4adyc9a75u6eclu6czqtr2vfyqf6v4svwwnyr",
-          "pub_key": null,
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "cosmos10rrplkj8s8z8gvu950aq3qlvrrltxr09r2z5um",
-          "pub_key": null,
-          "sequence": "0"
-        },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "account_number": "0",
@@ -54,19 +40,15 @@
     "bank": {
       "balances": [
         {
-          "address": "cosmos1q4adyc9a75u6eclu6czqtr2vfyqf6v4svwwnyr",
-          "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
-        },
-        {
-          "address": "cosmos10rrplkj8s8z8gvu950aq3qlvrrltxr09r2z5um",
-          "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
-        },
-        {
           "address": "cosmos16h4y2kjnax4s9vwfn87tpl37emy7h4hhg3wn69",
           "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
         },
         {
           "address": "cosmos1rhvj25tutkld9p43y6w8pdfhcfzk270dc76tmn",
+          "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
+        },
+        {
+          "address": "cosmos1xqnf6w60t3shcn5sey75a634w48aky3f4scf5r",
           "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
         }
       ],
@@ -176,6 +158,6 @@
     "validator": { "pub_key_types": ["ed25519"] },
     "version": {}
   },
-  "genesis_time": "2022-11-28T17:00:00.000000000Z",
+  "genesis_time": "2022-11-22T17:00:00.000000000Z",
   "initial_height": "1"
 }
