@@ -1,0 +1,12 @@
+{
+    "title": "Create the Apollo chain",
+    "description": "This is the proposal to create the consumer chain \"apollo\". Visit https://github.com/hyphacoop/ics-testnets/tree/main/game-of-chains-2022/apollo for details on this proposal's data and how to join the chain.",
+    "chain_id": "apollo",
+    "initial_height": {
+        "revision_height": 1
+    },
+    "genesis_hash": "978853b8e0f57f352916d7c4c5e9226b0e74b2a9f1292a0adcea2aa681c58c40",
+    "binary_hash": "071d7ee2765dc97206391aa64cd42e23e9847c179ab1c4e72eb1811b2c157047",
+    "spawn_time": "2022-11-10T15:00:00.000000Z",
+    "deposit": "1uprov"
+}
