@@ -25,7 +25,7 @@ The following items will be included in the proposal:
 
 ### Binary
 
-The binary published in this repo is the `neutrond` binary built using the `neutron` repo commit [f5f1ce84a18d9b274a3caa2719997e26c43d3448](https://github.com/neutron-org/neutron/tree/f5f1ce84a18d9b274a3caa2719997e26c43d3448). You can generate the binary following the [build instructions](https://docs.neutron.org/neutron/build).
+The reference binary published in this repo is the `neutrond` binary built using the `neutron` repo commit [f5f1ce84a18d9b274a3caa2719997e26c43d3448](https://github.com/neutron-org/neutron/tree/f5f1ce84a18d9b274a3caa2719997e26c43d3448). You should generate the binary following the [build instructions](https://docs.neutron.org/neutron/build).
 
   * [Linux amd64 build](neutrond)
   * SHA256: `1eb39959c25c5d6300b4624db882cfa9668aa83d58eed208e0fa28620e7af8ea`
