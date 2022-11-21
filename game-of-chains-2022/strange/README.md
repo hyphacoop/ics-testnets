@@ -9,7 +9,7 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-28: The `Strangelove` validator will start signing on Strange at `2022-11-28T17:00:00.000000Z`.
+  * 2022-11-28: The `goc-coordinator` validator will start signing on Strange at `2022-11-28T17:00:00.000000Z`.
   * 2022-11-27: Spawn time: `2022-11-27T17:00:00.000000Z`
   * 2022-11-26: Proposal 8 voting period ends
   * 2022-11-23: Proposal 8 goes into voting period
@@ -72,8 +72,8 @@ The genesis file with was generated using the following settings:
 ## Endpoints
 
 * **p2p persistent peers : `coming-soon`**
-* These peers represent the `strangelove-coordinator`validators (run by the testnet coordinators). 
-* The `strangelove-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `strangelove-coordinator` is live, the chain will progress.
+* These peers represent the `goc-coordinator`validators (run by the testnet coordinators). 
+* The `goc-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `goc-coordinator` is live, the chain will progress.
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
 ## Join via Bash Script
