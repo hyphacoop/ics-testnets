@@ -2,7 +2,7 @@
   "app_hash": "",
   "app_state": {
     "adminmodule": { "admins": [
-        "cosmos1xqnf6w60t3shcn5sey75a634w48aky3f4scf5r"
+        "cosmos10rrplkj8s8z8gvu950aq3qlvrrltxr09r2z5um"
     ] },
     "auth": {
       "accounts": [
@@ -67,10 +67,6 @@
         },
         {
           "address": "cosmos1rhvj25tutkld9p43y6w8pdfhcfzk270dc76tmn",
-          "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
-        },
-        {
-          "address": "cosmos1xqnf6w60t3shcn5sey75a634w48aky3f4scf5r",
           "coins": [{ "amount": "1000000000000000", "denom": "ustrange" }]
         }
       ],
