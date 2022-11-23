@@ -9,8 +9,8 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-28: Spawn time: `2022-11-27T17:00:00.000000Z`
-  * 2022-11-26: Proposal 8 voting period ends
+  * 2022-11-25: Spawn time: as soon as we have 66% consensus.
+  * 2022-11-25: Proposal 8 voting period ends
   * 2022-11-23: Proposal 8 goes into voting period
   * 2022-11-22: Genesis file without CCV state is generated
 
@@ -70,9 +70,9 @@ The genesis file with was generated using the following settings:
 
 ## Endpoints
 
-* **p2p persistent peers : `coming-soon`**
-* These peers represent the `strangelove-coordinator`validators (run by the testnet coordinators). 
-* The `strangelove-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `strangelove-coordinator` is live, the chain will progress.
+* **p2p persistent peers : `595923e093cbe11dea4f816b48e87691a614a964@34.82.58.71:26656,595923e093cbe11dea4f816b48e87691a614a964@34.145.117.181:26656`**
+* These peers represent the `strangelove-coordinator`validator. We are accepting `250` inbound peeers, but please consider sharing your peers in discord, or create a PR to [`peers.txt`](peers.txt)
+
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
 ## Join via Bash Script
