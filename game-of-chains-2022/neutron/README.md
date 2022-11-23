@@ -51,6 +51,7 @@ The genesis file with inclues the following settings:
 
 ## Endpoints
 
+* **p2p seeds : `919167501b299c98dbbb8ad3ed233aa314add27f@tenderseed.ccvalidators.com:29049`**
 * **p2p persistent peers : `4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@164.92.123.223:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@164.92.123.238:26656`**
 * These peers represent the `goc-coordinator` and `goc-backup` validators (run by the testnet coordinators). 
 * The `goc-backup` validator node will be running on neutron shortly after the genesis file that includes the CCV state (Cross Chain Validation state) has been published.
