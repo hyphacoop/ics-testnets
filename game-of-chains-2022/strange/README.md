@@ -9,8 +9,7 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-28: The `goc-coordinator` validator will start signing on Strange at `2022-11-28T17:00:00.000000Z`.
-  * 2022-11-27: Spawn time: `2022-11-27T17:00:00.000000Z`
+  * 2022-11-28: Spawn time: `2022-11-27T17:00:00.000000Z`
   * 2022-11-26: Proposal 8 voting period ends
   * 2022-11-23: Proposal 8 goes into voting period
   * 2022-11-22: Genesis file without CCV state is generated
@@ -66,14 +65,14 @@ The genesis file with was generated using the following settings:
 * Denom: `ustrange`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`strange-fresh-genesis.json`](strange-fresh-genesis.json), SHA256: `b171ec74d6928afe40407d01908b24f8cd8947bc412710f433f5526b75344521`
+* Genesis file **without CCV state**: [`strange-fresh-genesis.json`](strange-fresh-genesis.json), SHA256: `1b3d707cfb1a13855ca967280f0179b485c24e4b43e672bcb8be134c77ec986a`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
 
 * **p2p persistent peers : `coming-soon`**
-* These peers represent the `goc-coordinator`validators (run by the testnet coordinators). 
-* The `goc-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `goc-coordinator` is live, the chain will progress.
+* These peers represent the `strangelove-coordinator`validators (run by the testnet coordinators). 
+* The `strangelove-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `strangelove-coordinator` is live, the chain will progress.
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
 ## Join via Bash Script
