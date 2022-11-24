@@ -12,7 +12,7 @@ NODE_MONIKER=strange
 CHAIN_BINARY_URL='https://github.com/hyphacoop/ics-testnets/raw/main/game-of-chains-2022/strange/stranged'
 CHAIN_BINARY='stranged'
 CHAIN_ID=strange-1
-PERSISTENT_PEERS="4b5cee15e6a9c4b96b8c1c4f396a18b0461edc17@128.199.29.137:26656,835173badfc41ecbd867a0395c6a452bda2bb90f@128.199.26.103:26656"
+PERSISTENT_PEERS="595923e093cbe11dea4f816b48e87691a614a964@34.82.58.71:26656,595923e093cbe11dea4f816b48e87691a614a964@34.145.117.181:26656"
 
 # Install go 1.19.2
 echo "Installing go..."
