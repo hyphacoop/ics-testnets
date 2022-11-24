@@ -35,7 +35,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf strange
 # git clone https://github.com/strangelove-ventures/strange.git
 # cd strange
-# git checkout tags/v0.0.1
+# git checkout tags/v0.1.0
 # make install
 
 export PATH=$PATH:$HOME/go/bin
