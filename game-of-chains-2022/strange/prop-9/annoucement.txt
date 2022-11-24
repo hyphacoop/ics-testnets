@@ -1,0 +1,9 @@
+Hey Frens!  Strangelove has created `proposal-8` for a new community consumer chain `strange`.  
+
+We also created a youtube tutorial on how anyone can create their own consumer chain.
+https://www.youtube.com/watch?v=npoIZacWxRw&lc=UgzU_OmWojDgSvQn48J4AaABAg
+
+If any of you need help feel free to ask me in discord, or create a thread in https://discord.com/channels/669268347736686612/1009085609438085130 
+
+Don't forget to checkout our public goods resource page too!
+https://github.com/strangelove-ventures/goc-public/blob/main/README.md#public-goods

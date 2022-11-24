@@ -1,0 +1,13 @@
+{
+	"title": "Create the strange chain",
+	"description": "This corrects  the issues found in prop-8. This is a new proposal (prop-9) to create the consumer chain \"strange-1\". Visit https://github.com/strangelove-ventures/ics-testnets/tree/main/game-of-chains-2022/strange for details on this proposal's data and how to join the chain.",
+	"chain_id": "strange-1",
+	"initial_height": {
+		"revision_height": 1,
+		"revision_number": 1
+	},
+	"genesis_hash": "07b697e28618c29b234137240ea153aad37810d786727639fff93e02d81cc2e8",
+	"binary_hash": "452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364",
+	"spawn_time": "2022-11-28T17:00:00.000000Z",
+	"deposit": "1uprov"
+}
