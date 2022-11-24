@@ -1,6 +1,6 @@
 {
 	"title": "Create the strange chain",
-	"description": "This corrects  the issues found in prop-8. This is a new proposal (prop-9) to create the consumer chain \"strange-1\". Visit https://github.com/strangelove-ventures/ics-testnets/tree/main/game-of-chains-2022/strange for details on this proposal's data and how to join the chain.",
+	"description": "This corrects  the issues found in prop-8. This is a new proposal (prop-9) to create the consumer chain \"strange-1\". Visit https://github.com/strangelove-ventures/ics-testnets/tree/main/game-of-chains-2022/strange/prop-9/ for details on this proposal's data and how to join the chain.",
 	"chain_id": "strange-1",
 	"initial_height": {
 		"revision_height": 1,
