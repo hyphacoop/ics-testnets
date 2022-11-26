@@ -1,0 +1,7 @@
+{
+	"title": "Should we stop the strange chain or leave it running?",
+	"description": "This is a proposal to determine if the community wants to stop the strange-1 chain on december 1st. I think it would be cool to leave some of the participant chains running for the life of this testnet. We are committed to maintaining this chain long term to help support the growth of ICS adoption. Vote yes if you think the chain should stop, vote no if you would like it to keep running for the life of the testnet.",
+	"chain_id": "strange-1",
+	"stop_time": "2022-12-01T17:00:00.000000Z",
+	"deposit": "1uprov"
+}

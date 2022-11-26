@@ -5,3 +5,10 @@ gaiad tx gov submit-proposal consumer-addition strange-proposal.json \
 --keyring-backend file \
 --chain-id=provider \
 --gas auto
+
+
+gaiad tx gov submit-proposal consumer-removal strange-proposal-stop.json \
+--from=$ACCOUNT \
+--keyring-backend file \
+--chain-id=provider \
+--gas auto
