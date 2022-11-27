@@ -39,8 +39,11 @@ Binary checksums can differ based on many things to include go, libc, and make v
   * Version: `v0.1.0`
   * SHA256: `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`
 
+  Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
   ```
-  docker run -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
+  #run on your ubuntu server
+  # use the `realpath` for the volume mount.
+  docker run -v /home/ubuntu/go/bin:/root/go/bin -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
   ```
   ```
   # run inside docker container.
@@ -51,7 +54,14 @@ Binary checksums can differ based on many things to include go, libc, and make v
   make install
   sha256sum ~/go/bin/stranged
   ```
-  expected return `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`
+  expected return `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`  
+  
+  Now, verify the checksum on your local ubuntu server  
+  ```
+  #run on your ubuntu server
+  sha256sum /home/ubuntu/go/bin/stranged
+  ```
+  expected return `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`  
 
 ### Genesis file
 
