@@ -1,0 +1,5 @@
+#!/bin/bash
+gaiad query provider consumer-genesis strange-1 -o json | jq . > ccv_strange.json
+curl -s https://raw.githubusercontent.com/strangelove-ventures/ics-testnets/main/game-of-chains-2022/strange/prop-9/strange-fresh-genesis.json | jq . > prep_strange.json
+jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' prep_strange.json ccv_strange.json > strange-genesis.json
+sha256sum strange-genesis.json
