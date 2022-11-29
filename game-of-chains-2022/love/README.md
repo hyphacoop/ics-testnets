@@ -91,6 +91,9 @@ _If you don't have grpc, you can leave empty string. ex. `GRPC_XXXXXX=""`_
 ```sh
 $ bash run_rly.sh
 ```
+You can find your relayer's valset update count with this tool([goc-relayer-evidence](https://github.com/gnongs/goc-relayer-evidence))I, Please check out this repo.
+
+If you reached 500 times of relay, Please stop relayer for others :D.
 
 ## Endpoints
 
