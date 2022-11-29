@@ -4,6 +4,7 @@ Contents
 
 * [Status](#status)
 * [Chain Data](#chain-data)
+* [Relayer](#relayer)
 
 ## Status
 
@@ -49,6 +50,50 @@ The genesis file with was generated using the following settings:
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
 * Genesis file **without CCV state**: [`love-fresh-genesis.json`](love-fresh-genesis.json), SHA256: `c4de8465e97767045df0528e7e14baec9162921364732a577b27cb283f5cd404`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
+
+## Relayer
+If you want to get 20 points about relayer on game-of-chain, you just follow below guide.
+
+0. Clone this repo
+```sh
+$ git clone https://github.com/dsrvlabs/ics-testnets.git
+```
+
+1. Move to relayer folder
+```sh
+$ cd ics-testnets/game-of-chain/love/relayer
+```
+
+2. Edit `run_rly.sh`
+
+Input your validator account mnemonic, memo, rpc and grpc address.
+
+_If you don't have grpc, you can leave empty string. ex. `GRPC_XXXXXX=""`_
+
+```sh
+  3 providerMnmonic="24 words"
+  4 memo="Your relayer information"
+  5 chains=("provider" "sputnik" "hero" "neutron" "gopher")
+  6 RPC_PROVIDER="https://127.0.0.1:26657"
+  7 GRPC_PROVIDER="https://127.0.0.1:29090"
+  8 RPC_SPUTNIK="https://127.0.0.1:26657"
+  9 GRPC_SPUTNIK="https://127.0.0.1:29090"
+ 10 RPC_HERO="https://127.0.0.1:26657"
+ 11 GRPC_HERO="https://127.0.0.1:29090"
+ 12 RPC_NEUTRON="https://127.0.0.1:26657"
+ 13 GRPC_NEUTRON="https://127.0.0.1:29090"
+ 14 RPC_GOPHER="https://127.0.0.1:26657"
+ 15 GRPC_GOPHER="https://127.0.0.1:29090"
+```
+
+3. Execute `run_rly.sh`
+
+```sh
+$ bash run_rly.sh
+```
+You can find your relayer's valset update count with this tool([goc-relayer-evidence](https://github.com/gnongs/goc-relayer-evidence))I, Please check out this repo.
+
+If you reached 500 times of relay, Please stop relayer for others :D.
 
 ## Endpoints
 
