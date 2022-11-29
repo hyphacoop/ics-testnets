@@ -9,10 +9,10 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-30: Spawn Time : `2022-11-30T00:00:00.000000000Z`
-  * 2022-11-27: Proposal 16 voting period ends
-  * 2022-11-25: Proposal 16 goes into voting period
-  * 2022-11-25: Genesis file without CCV state is generated
+  * 2022-12-02: Spawn Time : `2022-12-02T13:00:00.000000000Z`
+  * 2022-12-01: Proposal 32 voting period ends
+  * 2022-11-29: Proposal 32 goes into voting period
+  * 2022-11-29: Genesis file without CCV state is generated
 
 Love will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
 
@@ -48,11 +48,44 @@ The genesis file with was generated using the following settings:
 * Denom: `ulove`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`love-fresh-genesis.json`](love-fresh-genesis.json), SHA256: `c4de8465e97767045df0528e7e14baec9162921364732a577b27cb283f5cd404`
+* Genesis file **without CCV state**: [`love-fresh-genesis.json`](love-fresh-genesis.json), SHA256: `dcb20193ec5ad0341f3fe33ae8c073a08714fe3f755aebf410a6d835382d8a41`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
+## Endpoints
+
+* **p2p persistent peers : `88aef9532d8825c467c0a6a2f090d1f278cb0c03@164.92.169.128:46656,92acb51c5159661af41b5e5281fb16d5754fffad@125.186.14.23:26656`**
+* These peers represent the `DSRV` validator. please consider sharing your peers in discord, or create a PR to peers.txt
+* Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
+
+## Join via Bash Script
+
+On the node machine:
+- Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
+  - **These should be the same ones as the ones from your provider node**.
+- Run one of the following scripts:
+  - Love service: [love-init.sh](love-init.sh)
+  - Cosmovisor service: [love-init-cv.sh](love-init-cv.sh)
+- Wait until the spawn time is reached and the genesis file with the CCV states is available.
+- Overwrite the genesis file with the one that includes the CCV states.
+  - The default location is `$HOME/.love/config/genesis.json`.
+- Enable and start the service:
+  - Love
+    ```
+    sudo systemctl enable love
+    sudo systemctl start love
+    ```
+  - Cosmovisor
+    ```
+    sudo systemctl enable cv-love
+    sudo systemctl start cv-love
+    ```
+- To follow the log, use:
+  - Love: `journalctl -fu love`
+  - Cosmovisor: `journalctl -fu cv-love`
+- If the log does not show up right away, run `systemctl restart systemd-journald`.
+
 ## Relayer
-If you want to get 20 points about relayer on game-of-chain, you just follow below guide.
+If you want to get 20 points for task 21 [Run a relayer](https://github.com/hyphacoop/ics-testnets/tree/main/game-of-chains-2022#run-a-relayer) in game-of-chain, you just follow below guide.
 
 0. Clone this repo
 ```sh
@@ -95,35 +128,3 @@ You can find your relayer's valset update count with this tool([goc-relayer-evid
 
 If you reached 500 times of relay, Please stop relayer for others :D.
 
-## Endpoints
-
-* **p2p persistent peers : `b415bba3c0c1be3e7c0b1f6036475904c5372017@164.92.169.128:26656`**
-* These peers represent the `DSRV` validator. please consider sharing your peers in discord, or create a PR to peers.txt
-* Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
-
-## Join via Bash Script
-
-On the node machine:
-- Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
-  - **These should be the same ones as the ones from your provider node**.
-- Run one of the following scripts:
-  - Love service: [love-init.sh](love-init.sh)
-  - Cosmovisor service: [love-init-cv.sh](love-init-cv.sh)
-- Wait until the spawn time is reached and the genesis file with the CCV states is available.
-- Overwrite the genesis file with the one that includes the CCV states.
-  - The default location is `$HOME/.love/config/genesis.json`.
-- Enable and start the service:
-  - Love
-    ```
-    sudo systemctl enable love
-    sudo systemctl start love
-    ```
-  - Cosmovisor
-    ```
-    sudo systemctl enable cv-love
-    sudo systemctl start cv-love
-    ```
-- To follow the log, use:
-  - Love: `journalctl -fu love`
-  - Cosmovisor: `journalctl -fu cv-love`
-- If the log does not show up right away, run `systemctl restart systemd-journald`.
