@@ -18,7 +18,7 @@ The process we are following to start the consumer chains is as follows:
     ```bash
     jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' <consumer genesis without CCV state> ccvconsumer_genesis.json > <consumer genesis file with CCV state>
     ```
-   Modify the parameters of the CCV module so the unbonding_period matches the provider chain's. For a provider chain with a 4-day unbonding period, change this:
+   Modify the parameters of the CCV module so the `unbonding_period` matches the provider chain's. For a provider chain with a 4-day unbonding period, change this:
    ```
    "ccvconsumer": {
       "params": {
