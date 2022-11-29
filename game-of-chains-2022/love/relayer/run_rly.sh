@@ -13,6 +13,7 @@ RPC_NEUTRON="https://127.0.0.1:26657"
 GRPC_NEUTRON="https://127.0.0.1:29090"
 RPC_GOPHER="https://127.0.0.1:26657"
 GRPC_GOPHER="https://127.0.0.1:29090"
+PWD=`pwd`
 
 # Install rly binary
 git clone https://github.com/cosmos/relayer $HOME/relayer && cd $HOME/relayer
@@ -23,8 +24,7 @@ rly version
 
 mkdir -p $HOME/.relayer/config
 
-cd -
-cp ./ex_config.yaml $HOME/.relayer/config/config.yaml
+cp $PWD/ex_config.yaml $HOME/.relayer/config/config.yaml
 
 # Edit config.yaml
 sed -i -e "s@YOUR INFORMATION@$memo@g" $HOME/.relayer/config/config.yaml
@@ -46,4 +46,6 @@ do
 done
 
 ## Start rly
-rly start provider-sputnik provider-hero provider-neutron provider-gopher
+rly start provider-sputnik provider-hero provider-neutron provider-gopher >> $PWD/relayer.log 2>&1 &
+echo "rly start"
+echo "You can find relayer log ${PWD}/relayer.log"
