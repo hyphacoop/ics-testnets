@@ -240,6 +240,7 @@ Testnet coordinators will turn off the relayer between the provider and Sputnik 
 A sofware upgrade proposal will be submitted on Nov 30 to upgrade the provider chain on Tuesday, Dec 6. The new version will add the following features:
 
 **Key Assignment**
+
 This is one of the most-requested features by validators. Key Assignment allows validators to use different keys on consumer chains than they use on the Cosmos Hub. By sending one transaction, a validator is able to indicate which public key they will be using to validate a consumer chain. Validators can use a different key for each consumer chain.
 
 **Slashing Rate Limiter**
