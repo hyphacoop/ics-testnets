@@ -28,7 +28,7 @@ Contents
 ---
 * Binary: `gaiad`
   * [Linux amd64 build](gaiad-goc-december)
-  * [ICS `goc-december` branch](https://github.com/cosmos/gaia/tree/glnro/ics-sdk45)
+  * [glnro/ics-sdk45 branch](https://github.com/cosmos/gaia/tree/glnro/ics-sdk45)
   * Commit `b56fe257ec4c5647bdc105602b57273936b714eb`
 * Binary SHA256: `a23b9c9f320b047ffe63db738defeda12c22a29e5d8572a3a545213dd729b5a8`
 ---
