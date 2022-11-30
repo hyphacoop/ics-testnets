@@ -35,6 +35,11 @@ A form will be made available in the Discord channel to request faucet tokens in
 * [Sputnik chain information](sputnik/README.md)
 * [Apollo chain information](apollo/README.md)
 * [Hero chain information](hero/README.md)
+* [Neutron chain information](neutron/README.md)
+* [Gopher chain information](gopher/README.md)
+* [Larry chain information](larry/README.md)
+* [Curly chain information](curly/README.md)
+* [Moe chain information](moe/README.md)
 
 ## Overview
 
@@ -198,6 +203,8 @@ Phase tasks:
 
 #### Round 6: Proposal Due Diligence
 
+**Nov 29-Dec 2**
+
 Testnet coordinators will submit several proposals to create consumer chains:
 - Some proposals may be erroneous.
 - Some binaries related to these proposals will be malicious.
@@ -236,8 +243,8 @@ To earn points in the Game of Chains testnet program, you can:
 | 4 | 1 | Vote yes on the Gopher `create-consumer-chain` proposal | TX hash |
 | ~~5~~ | ~~1~~ | ~~Vote yes on the Stride `create-consumer-chain` proposal~~ | ~~TX hash~~ |
 | 6 | 1 | Vote yes on the Apollo `stop-consumer-chain` proposal | TX hash |
-| 7 | 1 | Vote no on at least one proposal that contains incorrect metadata | TX hash |
-| 8 | 2 | Vote no on at least one proposal that links to malicious binaries | TX hash |
+| 7 | 1 | Vote no on at least one proposal that contains incorrect metadata | TX hash and reason for voting no |
+| 8 | 2 | Vote no on at least one proposal that links to malicious binaries | TX hash and reason for voting no |
 | 26 | 1 | Vote yes on the Hero `create-consumer-chain` proposal | TX hash |
 
 #### Validator Sets Monitoring
