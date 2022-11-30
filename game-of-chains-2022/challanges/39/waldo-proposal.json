@@ -1,0 +1,13 @@
+{
+	"title": "Create the waldo chain",
+	"description": "This is a proposal to create the consumer chain \"waldo\". Visit https://github.com/strangelove-ventures/ics-testnets/tree/main/game-of-chains-2022/waldo/ for details on this proposal's data and how to join the chain.",
+	"chain_id": "waldo",
+	"initial_height": {
+		"revision_height": 1,
+		"revision_number": 1
+	},
+	"genesis_hash": "ad2ed599af710b3affe87fcda71cf4bcbffd7d1cd281a1b55e648d3b18caafb1",
+	"binary_hash": "ab95aab5f061e724212d5d398f564a9696d43a44a4fb55bb499265f005df1609",
+	"spawn_time": "2022-12-06T17:00:00.000000Z",
+	"deposit": "1uprov"
+}
