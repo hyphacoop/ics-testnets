@@ -198,7 +198,7 @@ Phase tasks:
 * 👷 17. Sign on the last block of the Sputnik chain without having been jailed for downtime since the first block (2 point)
 * 👷 18. Create at least one custom consumer chain binary for a proposal that passes (5 points)
 * 👷 19. Submit at least one `create-consumer-chain` proposal for a chain that starts (5 points)
-* 👷 20. Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified height (5 points)
+* 👷 20. Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified stop time (5 points)
 * 👷 21. Run a relayer between a provider and consumer chain that relays at least 500 validator set changes (20 points)
 * 👷 28. Assign a key on an existing consumer chain (1 point).
 * 👷 29. Assign a key on a new consumer chain (1 point).
@@ -250,6 +250,10 @@ This protects the Cosmos Hub against the worst-case scenario of a malicious cons
 
 **Dec 9, 2022**
 
+We will review all evidence submitted up until Dec 9.
+
+Please note that the evidence will take some time to review before a final tally is published.
+
 ## Points System
 
 To earn points in the Game of Chains testnet program, you can:
@@ -297,7 +301,7 @@ To earn points in the Game of Chains testnet program, you can:
 | 17 | 2 | Sign the last block of the Sputnik chain without having been jailed for downtime since the first block | None required* |
 | 18 | 5 | Create at least one custom consumer chain binary for a proposal that passes   | Source code |
 | 19 | 5 | Submit at least one `create-consumer-chain` proposal for a chain that starts  | TX hash |
-| 20 | 5 | Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified height | TX hash |
+| 20 | 5 | Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified stop time | TX hash |
 | 27 | 1 | Sign the first block after genesis of the Hero chain | None required* |
 | 28 | 1 | Assign a key on an existing consumer chain | TX hash |
 | 29 | 1 |  Assign a key on a new consumer chain | TX hash |
