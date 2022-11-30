@@ -194,12 +194,16 @@ Phase tasks:
 
 * 🔎 7. Vote no on at least one proposal that contains incorrect metadata (1 point)
 * 🔎 8. Vote no on at least one proposal that links to malicious binaries (2 points)
+* 🔎 30. Vote **yes** on the `slasher` chain `consumer-addition` proposal (1 point)
 * 👷 17. Sign on the last block of the Sputnik chain without having been jailed for downtime since the first block (2 point)
 * 👷 18. Create at least one custom consumer chain binary for a proposal that passes (5 points)
 * 👷 19. Submit at least one `create-consumer-chain` proposal for a chain that starts (5 points)
-* 👷 20. Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified height (5 points)
+* 👷 20. Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified stop time (5 points)
 * 👷 21. Run a relayer between a provider and consumer chain that relays at least 500 validator set changes (20 points)
-* **40 points maximum**
+* 👷 28. Assign a key on an existing consumer chain (1 point).
+* 👷 29. Assign a key on a new consumer chain (1 point).
+* 👷 31. Get unjailed after being slashed by the `slasher` chain (2 points)
+* **45 points maximum**
 
 #### Round 6: Proposal Due Diligence
 
@@ -213,17 +217,42 @@ It will be up to the validators to review the proposals and reject the bad ones!
 
 #### Round 7: Start Validator Consumer Chains
 
+**Nov 23-Dec 9**
+
 Validators will start any number of additional consumer chains. This will require some engagement and coordination with other participants, besides submitting proposals and (optionally) preparing custom binaries.
 
 Validators will be responsible for running relayers between the provider and consumer chains.
 
 #### Round 8: Stop Validator Consumer Chains
 
+**Nov 23-Dec 9**
+
 Validators will be in charge of stopping consumer chains.
 
 #### Round 9: Stop the Sputnik Consumer Chain
 
 Testnet coordinators will turn off the relayer between the provider and Sputnik chains. The IBC client will expire and reach the timeout period, causing the Sputnik chain to stop.
+
+#### Round 10: Upgrade the Provider Chain to Test New Features
+
+**Nov 30-Dec 9**
+
+A sofware upgrade proposal will be submitted on Nov 30 to upgrade the provider chain on Tuesday, Dec 6. The new version will add the following features:
+
+**Key Assignment**
+This is one of the most-requested features by validators. Key Assignment allows validators to use different keys on consumer chains than they use on the Cosmos Hub. By sending one transaction, a validator is able to indicate which public key they will be using to validate a consumer chain. Validators can use a different key for each consumer chain.
+
+**Slashing Rate Limiter**
+
+This protects the Cosmos Hub against the worst-case scenario of a malicious consumer chain binary which slashes many validators as part of an attack. The rate limiter will stop an unusually large amount of validation power from being slashed and jailed at once. Most likely, this code will never actually be triggered, but it's good to have it in place. The security benefit that it brings also translates into an operational benefit- higher confidence in safety means less work needs to be expended by validators and core teams on auditing consumer chain upgrade proposals. We will test this code by launching a malicious `slasher` consumer chain which will try to slash all validators. Due to the rate limiting code, only a few validators at most will be slashed and jailed per hour. The validators who are jailed can then unjail themselves to prevent takeover of the chain.
+
+#### Game of Chains Ends
+
+**Dec 9, 2022**
+
+We will review all evidence submitted up until Dec 9.
+
+Please note that the evidence will take some time to review before a final tally is published.
 
 ## Points System
 
@@ -246,6 +275,7 @@ To earn points in the Game of Chains testnet program, you can:
 | 7 | 1 | Vote no on at least one proposal that contains incorrect metadata | TX hash and reason for voting no |
 | 8 | 2 | Vote no on at least one proposal that links to malicious binaries | TX hash and reason for voting no |
 | 26 | 1 | Vote yes on the Hero `create-consumer-chain` proposal | TX hash |
+| 30 | 1 | Vote **yes** on the `slasher` chain `consumer-addition` proposal | TX hash |
 
 #### Validator Sets Monitoring
 
@@ -271,8 +301,11 @@ To earn points in the Game of Chains testnet program, you can:
 | 17 | 2 | Sign the last block of the Sputnik chain without having been jailed for downtime since the first block | None required* |
 | 18 | 5 | Create at least one custom consumer chain binary for a proposal that passes   | Source code |
 | 19 | 5 | Submit at least one `create-consumer-chain` proposal for a chain that starts  | TX hash |
-| 20 | 5 | Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified height | TX hash |
+| 20 | 5 | Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified stop time | TX hash |
 | 27 | 1 | Sign the first block after genesis of the Hero chain | None required* |
+| 28 | 1 | Assign a key on an existing consumer chain | TX hash |
+| 29 | 1 |  Assign a key on a new consumer chain | TX hash |
+| 31 | 2 |  Get unjailed after being slashed by the `slasher` chain | TX hash |
 
 * \*For tasks that do not require evidence, testnet coordinators will query the relevant blocks.
 

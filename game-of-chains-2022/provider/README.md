@@ -13,15 +13,28 @@ Contents
 ## Status
 
 * Provider chain 
-  - [block explorer](https://provider-explorer.goc.earthball.xyz)
-  - [Ping Dashboard](https://testnet.ping.pub/provider)
+  * [Block Explorer](https://provider-explorer.goc.earthball.xyz)
+  * [Ping Dashboard](https://testnet.ping.pub/provider)
+
 * Timeline
+  * 2022-12-06: Block height `480681` is reached at approximately `15:00 UTC`.
+  * 2022-11-30: Software upgrade proposal submitted to upgrade to `goc-december` version at block height `480681`.
   * 2022-11-10: New gaiad binary published to bump ICS to `v0.2.1`.
-  * 2022-11-07: Chain started
+  * 2022-11-07: Chain started.
 
 ## Chain Data
 
-**Current:**
+**`goc-december` version (upgrade target for block 480681):**
+
+---
+* Binary: `gaiad`
+  * [Linux amd64 build](gaiad-goc-december)
+  * [glnro/ics-sdk45 branch](https://github.com/cosmos/gaia/tree/glnro/ics-sdk45)
+  * Commit `b56fe257ec4c5647bdc105602b57273936b714eb`
+* Binary SHA256: `a23b9c9f320b047ffe63db738defeda12c22a29e5d8572a3a545213dd729b5a8`
+---
+
+**`ICS v0.2.1` version (current):**
 
 ---
 * Binary: `gaiad`
@@ -29,14 +42,18 @@ Contents
   * [ICS v0.2.1 fork](https://github.com/smarshall-spitzbart/gaia/tree/glnro/ics-sdk45)
   * Commit `f729517a4a231a02172df6763c2ffed0524a2804`
 * Binary SHA256: `d1dc6d31671a56b995cc8fab639a4cae6a88981de05d42163351431b8a6691cf`
+---
+
 * Genesis file: [provider-genesis.json](https://raw.githubusercontent.com/hyphacoop/ics-testnets/main/game-of-chains-2022/provider/provider-genesis.json)
 * Chain ID: `provider`
 * Denom: `uprov`
 * Bech32 prefix: `cosmos`
 
----
-
 ## ⛔ ATTENTION ⛔
+
+**2022-11-30 19:00 UTC** 
+- A software upgrade proposal will be submitted to upgrade the provider chain binary to version `goc-december`.
+- The upgrade height is `480681`, which will be reached on Dec 6 at approximately `15:00 UTC`.
 
 **2022-11-10 13:00 UTC** 
 - The gaiad version used to launch the provider chain is now considered to be deprecated. The section below has been kept for reference only.
@@ -73,6 +90,28 @@ Contents
   * P2P: https://p2p.provider-seed-01.goc.earthball.xyz
   * API: https://rest.provider-seed-01.goc.earthball.xyz
   * gRPC: https://grpc.provider-seed-01.goc.earthball.xyz
+
+## Upgrading to `goc-december`
+
+The binary used on the provider chain starting from block height 53094 (ICS `v0.2.1`) will be upgraded to the `goc-december` version at block height 480681.
+
+You can either build a new binary or download the one in this folder, and follow the steps below:
+- Stand-alone `gaiad`
+  - Stop the service running `gaiad`
+  - Replace the `gaiad` binary in the `~/go/bin/` folder
+  - Start the service running `gaiad`
+- Cosmovisor
+  - **Before the upgrade block height is reached:**
+    - Stop the service running Cosmovisor
+    - Set the `DAEMON_ALLOW_DOWNLOAD_BINARIES` variable to `false`
+    - Copy the new binary to `~/.gaia/cosmovisor/upgrades/goc-december/bin/gaiad`
+    - Start the service running Cosmovisor
+ 
+After upgrading you should see the version below:
+```
+gaiad version
+HEAD-b56fe257ec4c5647bdc105602b57273936b714eb
+```
 
 ## Upgrading to ICS v0.2.1
 
