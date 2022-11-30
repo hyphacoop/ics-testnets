@@ -24,7 +24,7 @@ The following items will be included in the proposal:
 
 ### Binary
 
-The binary published in this repo is the `waldod` binary built using the `hyphacoop/cosmos-goc-waldo` repo tag [v0.1.0](https://github.com/hyphacoop/cosmos-goc-waldo/releases/tag/v0.1.0). You can generate the binary following the [build instructions](https://github.com/hyphacoop/cosmos-goc-waldo#instructions) or the build script below.
+The binary published in this repo is the `waldod` binary built using the `hyphacoop/cosmos-goc-waldo` repo tag [v0.1.0](https://github.com/strangelove-ventures/waldo/releases/tag/v0.1.0). You can generate the binary following the [build instructions](https://github.com/strangelove-ventures/waldo#instructions) or the build script below.
 
   * [Linux amd64 build](waldod)
   * SHA256: `ab95aab5f061e724212d5d398f564a9696d43a44a4fb55bb499265f005df1609`
