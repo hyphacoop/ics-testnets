@@ -17,7 +17,7 @@ Contents
   * [Ping Dashboard](https://testnet.ping.pub/provider)
 
 * Timeline
-  * 2022-12-06: Block height `480681` is reached at approximately `15:00 UTC`.
+  * 2022-12-08: Block height `480681` will be reached at approximately `17:00 UTC`.
   * 2022-11-30: Software upgrade proposal submitted to upgrade to `goc-december` version at block height `480681`.
   * 2022-11-10: New gaiad binary published to bump ICS to `v0.2.1`.
   * 2022-11-07: Chain started.
@@ -51,9 +51,12 @@ Contents
 
 ## ⛔ ATTENTION ⛔
 
+**2022-12-01 17:00 UTC** 
+- The upgrade height of `480681` for `goc-december` will be reached on **Dec 8** at approximately `17:00 UTC`.
+
 **2022-11-30 19:00 UTC** 
 - A software upgrade proposal will be submitted to upgrade the provider chain binary to version `goc-december`.
-- The upgrade height is `480681`, which will be reached on Dec 6 at approximately `15:00 UTC`.
+- ~~The upgrade height is `480681`, which will be reached on Dec 6 at approximately `15:00 UTC`~~.
 
 **2022-11-10 13:00 UTC** 
 - The gaiad version used to launch the provider chain is now considered to be deprecated. The section below has been kept for reference only.
