@@ -11,8 +11,8 @@ Contents
 
 * Timeline
   * 2022-12-06: Spawn Time : `2022-12-06T13:00:00.000000000Z`
-  * 2022-12-06: Proposal 47 voting period ends
-  * 2022-12-03: Proposal 47 goes into voting period
+  * 2022-12-06: Proposal 56 voting period ends
+  * 2022-12-03: Proposal 56 goes into voting period
   * 2022-12-03: Genesis file without CCV state is generated
 
 RAND will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
