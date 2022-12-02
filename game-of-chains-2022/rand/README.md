@@ -32,8 +32,8 @@ The following items will be included in the proposal:
 The binary published in this repo is the `randd` binary built using the `dsrvlabs/rand` repo tag [v0.0.1](https://github.com/dsrvlabs/rand/releases/tag/v0.0.1). You can generate the binary following the [Get Started section](https://github.com/dsrvlabs/rand/tree/v0.0.1#get-started).
 
   * [Linux amd64 build](randd)
-  * Version: `main-397067303b1a543fed873071b34c984c8dce7920`
-  * SHA256: `1aadeb9d9d8495159e9d51e75e2948f6b59f992a68d0da3221a59db7a415b5b8`
+  * Version: `main-23b756acb9090a44e666542f8afba8f0d96ecc32`
+  * SHA256: `e42617c52c0bb51539861db6f834d4e1795e7424102cb25137763fcdb6e30314`
 
 ### Genesis file
 
@@ -49,7 +49,7 @@ The genesis file with was generated using the following settings:
 * Denom: `urand`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`rand-fresh-genesis.json`](rand-fresh-genesis.json), SHA256: `dcb20193ec5ad0341f3fe33ae8c073a08714fe3f755aebf410a6d835382d8a41`
+* Genesis file **without CCV state**: [`rand-fresh-genesis.json`](rand-fresh-genesis.json), SHA256: `902fa8275721b2f25199c89b16a8e53d03e85c0e4e28c1281cd5e5e660cc1670`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
