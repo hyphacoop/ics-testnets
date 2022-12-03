@@ -1,4 +1,4 @@
-# TODO add binary version & hash, add fresh-genesis hash
+# TODO: add binary version & hash, add fresh-genesis hash, add seeds & peers
 
 # Flash Chain Information
 
@@ -45,7 +45,7 @@ The fresh-genesis file with was generated using the following settings:
 * Denom: `uflsh`
 * Signed blocks window: `"30000"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by CryptoCrew.
-* Genesis file **without CCV state**: [`flash-fresh-genesis.json`](flash-fresh-genesis.json), SHA256: `` # TODO: add sha256sum
+* Genesis file **without CCV state**: [`flash-fresh-genesis.json`](flash-fresh-genesis.json), SHA256: `b35914fcf6fae5cd978705c0230f350e1fb2b1ae39c6dde2c0d0000ca42a1834`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
