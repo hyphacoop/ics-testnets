@@ -40,6 +40,7 @@ A form will be made available in the Discord channel to request faucet tokens in
 * [Larry chain information](larry/README.md)
 * [Curly chain information](curly/README.md)
 * [Moe chain information](moe/README.md)
+* [Slasher chain information](slasher/README.md)
 
 ## Overview
 
@@ -200,10 +201,10 @@ Phase tasks:
 * 👷 19. Submit at least one `create-consumer-chain` proposal for a chain that starts (5 points)
 * 👷 20. Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified stop time (5 points)
 * 👷 21. Run a relayer between a provider and consumer chain that relays at least 500 validator set changes (20 points)
-* 👷 28. Assign a key on an existing consumer chain (1 point).
-* 👷 29. Assign a key on a new consumer chain (1 point).
+* 👷 28. Assign a key on a consumer chain (1 point).
+~~* 👷 29. Assign a key on a new consumer chain (1 point).~~
 * 👷 31. Get unjailed after being slashed by the `slasher` chain (2 points)
-* **45 points maximum**
+* **44 points maximum**
 
 #### Round 6: Proposal Due Diligence
 
@@ -242,6 +243,8 @@ A sofware upgrade proposal will be submitted on Nov 30 to upgrade the provider c
 **Key Assignment**
 
 This is one of the most-requested features by validators. Key Assignment allows validators to use different keys on consumer chains than they use on the Cosmos Hub. By sending one transaction, a validator is able to indicate which public key they will be using to validate a consumer chain. Validators can use a different key for each consumer chain.
+
+* **Please do not use the key assignment feature on the `slasher` chain**.
 
 **Slashing Rate Limiter**
 
@@ -304,8 +307,8 @@ To earn points in the Game of Chains testnet program, you can:
 | 19 | 5 | Submit at least one `create-consumer-chain` proposal for a chain that starts  | TX hash |
 | 20 | 5 | Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified stop time | TX hash |
 | 27 | 1 | Sign the first block after genesis of the Hero chain | None required* |
-| 28 | 1 | Assign a key on an existing consumer chain | TX hash |
-| 29 | 1 |  Assign a key on a new consumer chain | TX hash |
+| 28 | 1 | Assign a key on a consumer chain | TX hash |
+| ~~29~~ | ~~1~~ |  ~~Assign a key on a new consumer chain~~ | ~~TX hash~~ |
 | 31 | 2 |  Get unjailed after being slashed by the `slasher` chain | TX hash |
 
 * \*For tasks that do not require evidence, testnet coordinators will query the relevant blocks.
