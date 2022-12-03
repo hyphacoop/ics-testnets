@@ -202,7 +202,7 @@ Phase tasks:
 * 👷 20. Submit at least one `stop-consumer-chain` proposal that results in the chain stopping at the specified stop time (5 points)
 * 👷 21. Run a relayer between a provider and consumer chain that relays at least 500 validator set changes (20 points)
 * 👷 28. Assign a key on a consumer chain (1 point).
-~~* 👷 29. Assign a key on a new consumer chain (1 point).~~
+* ~~👷 29. Assign a key on a new consumer chain (1 point).~~
 * 👷 31. Get unjailed after being slashed by the `slasher` chain (2 points)
 * **44 points maximum**
 
