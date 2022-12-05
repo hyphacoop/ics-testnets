@@ -61,8 +61,8 @@ On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
   - **These should be the same ones as the ones from your provider node**.
 - Run one of the following scripts:
-  - Flash service: [flash-init.sh](flash-init.sh)
-  - Cosmovisor service: [flash-init-cv.sh](flash-init-cv.sh)
+  - Flash service: [flash-init.sh](./flash-init.sh)
+  - Cosmovisor service: [flash-init-cv.sh](./flash-init-cv.sh)
 - Wait until the spawn time is reached and the genesis file with the CCV states is available.
 - Overwrite the genesis file with the one that includes the CCV states.
   - The default location is `$HOME/.flash/config/genesis.json`.
@@ -81,3 +81,56 @@ On the node machine:
   - Flash: `journalctl -fu flash`
   - Cosmovisor: `journalctl -fu cv-flash`
 - If the log does not show up right away, run `systemctl restart systemd-journald`.
+
+## Assign dedicated validator key for `flash`
+
+As per [proposal #44](https://testnet.mintscan.io/goc-provider/proposals/44), the `provider` chain will be upgraded at height `480681` (ETA `2022-12-08 16:15:13`). You can assign a dedicated validator key for `flash` after the upgrade has passed and before the `spawn_time` of `flash` has been reached. The estimated time window is about ~3.5 hours in between those events.  
+
+You can use `cronjob` and the scripts below to automate the process.
+
+- [generate consumer key script](./generate_consumer_key.sh)
+- [assign consumer key script](./assign_consumer_key.sh)
+
+Or use these steps to manually generate and assign a new key for `flash`:
+
+1) after normal init of `flash` or [using the installscript](#join-via-bash-script), first generate a new `priv_validator_key.json`:
+```sh
+flashd init --home ~/TMP
+PUBKEY=$(flashd --home ~/TMP tendermint show-validator)
+cp ~/TMP/config/priv_validator_key.json ~/.flash/config
+rm -r ~/TMP
+echo "new key generated at $HOME/.flash/config/priv_validator_key.json"
+echo "pubkey:"
+echo "*****************************************"
+echo $PUBKEY
+echo "*****************************************"
+```
+2) **backup the priv_validator_key.json!** 
+
+3) use the full pubkey from the output and paste it below. this script needs to be run on a machine with the updated `gaiad` version.
+```sh
+# enter your freshly generated pubkey from the first step, this transaction needs to be done on a machine with the updated gaiad version
+PUBKEY='{"@type":"/cosmos.crypto.ed25519.PubKey","key":"..."}'
+
+NODE_NAME=gaiad
+NODE_HOME=~/.gaia
+KEY_NAME=validator
+KEYRING_BACKEND=os
+DENOM=uprov
+CHAIN_ID=provider
+CONSUMER_ID=flash
+GAS_PRICES=0.0025uprov
+RPC=https://rpc.provider-sentry-01.goc.earthball.xyz:443
+
+${NODE_NAME} --home ${NODE_HOME} tx provider assign-consensus-key \
+  ${CONSUMER_ID} \
+  ${PUBKEY} \
+  --from ${KEY_NAME} \
+  --keyring-backend ${KEYRING_BACKEND} \
+  --chain-id ${CHAIN_ID} \
+  --gas auto \
+  --gas-adjustment 1.5 \
+  --gas-prices ${GAS_PRICES} \
+  --node ${RPC} \
+  -y
+```
