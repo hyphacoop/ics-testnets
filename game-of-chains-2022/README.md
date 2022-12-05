@@ -41,6 +41,7 @@ A form will be made available in the Discord channel to request faucet tokens in
 * [Curly chain information](curly/README.md)
 * [Moe chain information](moe/README.md)
 * [Slasher chain information](slasher/README.md)
+* [Flash chain information](flash/README.md)
 
 ## Overview
 
