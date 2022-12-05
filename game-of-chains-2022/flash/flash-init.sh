@@ -11,7 +11,7 @@ NODE_HOME=~/.flash
 NODE_MONIKER=flash
 # ***
 
-CHAIN_BINARY_URL='https://github.com/clemensgg/ics-testnets/raw/main/game-of-chains-2022/flash/flashd'
+CHAIN_BINARY_URL='https://github.com/clemensgg/flash/releases/download/v0.1.0/flashd-v0.1.0-linux-amd64'
 CHAIN_BINARY='flashd'
 CHAIN_ID=flash
 PERSISTENT_PEERS=""

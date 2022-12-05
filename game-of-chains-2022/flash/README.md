@@ -1,5 +1,3 @@
-# TODO: add binary version & hash, add fresh-genesis hash, add seeds & peers
-
 # Flash Chain Information
 
 Contents
@@ -10,8 +8,8 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-12-04: Proposal goes into voting period
-  * 2022-12-07: Chain initialized
+  * 2022-12-05: Proposal goes into voting period
+  * 2022-12-08: Chain initialized
 
 Flash will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.  
 
@@ -29,9 +27,9 @@ The following items will be included in the proposal:
 
 The binary published in this repo is the `flashd` binary built using the `clemensgg/flash` repo tag [v0.1.0](https://github.com/clemensgg/flash/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/clemensgg/flash/tree/v0.1.0#get-started).  
 
-* [Linux amd64 build](flashd)
-* Version: `` # TODO: add version
-* SHA256: `` # TODO: add sha256sum
+* [Linux amd64 build](https://github.com/clemensgg/flash/releases/download/v0.1.0/flashd-v0.1.0-linux-amd64)
+* Version: `v0.1.0`
+* SHA256: `d99c27a84f3d37c3f1bbcfbb1c9187eadb695c77967706805692fe71176909c3`
 
 ### Genesis file
 
