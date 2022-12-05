@@ -61,7 +61,7 @@ The genesis file with was generated using the following settings:
 
 ## Endpoints
 
-* **p2p persistent peers : `88aef9532d8825c467c0a6a2f090d1f278cb0c03@164.92.169.128:46656,92acb51c5159661af41b5e5281fb16d5754fffad@125.186.14.23:26656`**
+* **p2p persistent peers : `88aef9532d8825c467c0a6a2f090d1f278cb0c03@164.92.169.128:46656,6dbf79b2f9657c4049715eb04c671c0c04407de3@46.101.195.113:46656`**
 * These peers represent the `DSRV` validator. please consider sharing your peers in discord, or create a PR to peers.txt
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
