@@ -13,7 +13,7 @@ Contents
 
 Flash will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.  
 
-Flash uses a forked version of the Cosmos SDK `[Flash SDK]`(https://github.com/clemensgg/flash-sdk) with updated default consensus timeout parameters, to allow a **target block production rate of ~1.7s / block**. We'll use this chain to test eventual issues with relayer performance due to diverging block times.
+Flash uses a forked version of the Cosmos SDK [`Flash SDK`](https://github.com/clemensgg/flash-sdk) with updated default consensus timeout parameters, to allow a **target block production rate of ~1.7s / block**. We'll use this chain to test eventual issues with relayer performance due to diverging block times.
 
 The following items will be included in the proposal:
 * Genesis file hash
