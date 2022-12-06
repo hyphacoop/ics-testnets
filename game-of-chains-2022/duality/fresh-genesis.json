@@ -1,0 +1,217 @@
+{
+    "app_hash": "",
+    "app_state": {
+        "adminmodule": {
+            "admins": [
+                "cosmos10gwktl4l55muy207c7j9k9d9humpj86wm33sn3"
+            ]
+        },
+        "auth": {
+            "accounts": [
+                {
+                    "@type": "/cosmos.auth.v1beta1.BaseAccount",
+                    "address": "cosmos1rhvj25tutkld9p43y6w8pdfhcfzk270dc76tmn",
+                    "pub_key": null,
+                    "account_number": "0",
+                    "sequence": "0"
+                },
+                {
+                    "@type": "/cosmos.auth.v1beta1.BaseAccount",
+                    "address": "cosmos10gwktl4l55muy207c7j9k9d9humpj86wm33sn3",
+                    "pub_key": null,
+                    "account_number": "0",
+                    "sequence": "0"
+                }
+            ],
+            "params": {
+                "max_memo_characters": "256",
+                "sig_verify_cost_ed25519": "590",
+                "sig_verify_cost_secp256k1": "1000",
+                "tx_sig_limit": "7",
+                "tx_size_cost_per_byte": "10"
+            }
+        },
+        "authz": {
+            "authorization": []
+        },
+        "bank": {
+            "balances": [
+                {
+                    "address": "cosmos1rhvj25tutkld9p43y6w8pdfhcfzk270dc76tmn",
+                    "coins": [
+                        {
+                            "denom": "stake",
+                            "amount": "1000000000"
+                        }
+                    ]
+                },
+                {
+                    "address": "cosmos10gwktl4l55muy207c7j9k9d9humpj86wm33sn3",
+                    "coins": [
+                        {
+                            "denom": "stake",
+                            "amount": "1000000000"
+                        }
+                    ]
+                }
+            ],
+            "denom_metadata": [],
+            "params": {
+                "default_send_enabled": true,
+                "send_enabled": []
+            },
+            "supply": []
+        },
+        "capability": {
+            "index": "1",
+            "owners": []
+        },
+        "ccvconsumer": {
+            "height_to_valset_update_id": [],
+            "initial_val_set": [],
+            "maturing_packets": [],
+            "new_chain": false,
+            "outstanding_downtime_slashing": [],
+            "params": {
+                "blocks_per_distribution_transmission": "1000",
+                "ccv_timeout_period": "2419200s",
+                "consumer_redistribution_fraction": "0.75",
+                "distribution_transmission_channel": "",
+                "enabled": false,
+                "historical_entries": "10000",
+                "provider_fee_pool_addr_str": "",
+                "transfer_timeout_period": "3600s",
+                "unbonding_period": "1728000s"
+            },
+            "pending_slash_requests": {
+                "requests": []
+            },
+            "provider_channel_id": "",
+            "provider_client_id": "",
+            "provider_client_state": null,
+            "provider_consensus_state": null
+        },
+        "crisis": {
+            "constant_fee": {
+                "amount": "1000",
+                "denom": "stake"
+            }
+        },
+        "dex": {
+            "LimitOrderTrancheList": [],
+            "LimitOrderTrancheUserList": [],
+            "adjanceyMatrixCount": "0",
+            "adjanceyMatrixList": [],
+            "edgeRowCount": "0",
+            "edgeRowList": [],
+            "feeListCount": "4",
+            "feeListList": [
+                {
+                    "fee": "1",
+                    "id": "0"
+                },
+                {
+                    "fee": "3",
+                    "id": "1"
+                },
+                {
+                    "fee": "5",
+                    "id": "2"
+                },
+                {
+                    "fee": "10",
+                    "id": "3"
+                }
+            ],
+            "pairMapList": [],
+            "params": {},
+            "sharesList": [],
+            "tickMapList": [],
+            "tokenMapList": [],
+            "tokensCount": "0",
+            "tokensList": []
+        },
+        "evidence": {
+            "evidence": []
+        },
+        "feegrant": {
+            "allowances": []
+        },
+        "ibc": {
+            "channel_genesis": {
+                "ack_sequences": [],
+                "acknowledgements": [],
+                "channels": [],
+                "commitments": [],
+                "next_channel_sequence": "0",
+                "receipts": [],
+                "recv_sequences": [],
+                "send_sequences": []
+            },
+            "client_genesis": {
+                "clients": [],
+                "clients_consensus": [],
+                "clients_metadata": [],
+                "create_localhost": false,
+                "next_client_sequence": "0",
+                "params": {
+                    "allowed_clients": [
+                        "06-solomachine",
+                        "07-tendermint"
+                    ]
+                }
+            },
+            "connection_genesis": {
+                "client_connection_paths": [],
+                "connections": [],
+                "next_connection_sequence": "0",
+                "params": {
+                    "max_expected_time_per_block": "30000000000"
+                }
+            }
+        },
+        "params": null,
+        "slashing": {
+            "missed_blocks": [],
+            "params": {
+                "downtime_jail_duration": "600s",
+                "min_signed_per_window": "0.500000000000000000",
+                "signed_blocks_window": "8640",
+                "slash_fraction_double_sign": "0.050000000000000000",
+                "slash_fraction_downtime": "0.010000000000000000"
+            },
+            "signing_infos": []
+        },
+        "transfer": {
+            "denom_traces": [],
+            "params": {
+                "receive_enabled": true,
+                "send_enabled": true
+            },
+            "port_id": "transfer"
+        },
+        "upgrade": {},
+        "vesting": {}
+    },
+    "chain_id": "duality",
+    "consensus_params": {
+        "block": {
+            "max_bytes": "22020096",
+            "max_gas": "-1",
+            "time_iota_ms": "1000"
+        },
+        "evidence": {
+            "max_age_duration": "172800000000000",
+            "max_age_num_blocks": "100000",
+            "max_bytes": "1048576"
+        },
+        "validator": {
+            "pub_key_types": [
+                "ed25519"
+            ]
+        },
+        "version": {}
+    },
+    "genesis_time": "2022-11-25T18:13:59.559092Z",
+    "initial_height": "1"
+}

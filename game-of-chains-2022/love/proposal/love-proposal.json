@@ -1,0 +1,13 @@
+{
+    "title": "Create the LOVE chain",
+    "description": "This is the proposal to create the consumer chain \"love-1\". Visit https://github.com/dsrvlabs/ics-testnets/tree/main/game-of-chains-2022/love for details on this proposal's data and how to join the chain. The LOVE chain forked from strange chain. Thanks for strangelove's contributions and support to the Game of Chains. Strange + Love = The Best Consumer Chains of Game of Chains ❤️  and we prepared a guide for running relayer! please check out https://github.com/dsrvlabs/ics-testnets/tree/main/game-of-chains-2022/love#relayer also. You can earn more points in GoC, If you done task 21 with relayer operation.",
+    "chain_id": "love-1",
+    "initial_height": {
+        "revision_height": 1,
+        "revision_number": 1
+    },
+    "genesis_hash": "dcb20193ec5ad0341f3fe33ae8c073a08714fe3f755aebf410a6d835382d8a41",
+    "binary_hash": "1aadeb9d9d8495159e9d51e75e2948f6b59f992a68d0da3221a59db7a415b5b8",
+    "spawn_time": "2022-12-02T13:00:00.000000Z",
+    "deposit": "1uprov"
+}

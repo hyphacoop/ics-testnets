@@ -1,0 +1,135 @@
+global:
+    api-listen-addr: :5183
+    timeout: 10s
+    memo: "YOUR INFORMATION"
+    light-cache-size: 20
+chains:
+  provider:
+    type: cosmos
+    value:
+      key: validator-key
+      chain-id: provider
+      rpc-addr: <rpc-provider>
+      grpc-addr: <grpc-provider>
+      account-prefix: cosmos
+      keyring-backend: test
+      gas-adjustment: 1.5
+      gas-prices: 0.001uprov
+      min-gas-amount: 200000
+      debug: false
+      timeout: 20s
+      output-format: json
+      sign-mode: direct
+  sputnik:
+    type: cosmos
+    value:
+      key: validator-key
+      chain-id: sputnik
+      rpc-addr: <rpc-sputnik>
+      grpc-addr: <grpc-sputnik>
+      account-prefix: cosmos
+      keyring-backend: test
+      gas-adjustment: 1.5
+      gas-prices: 0.001unik
+      min-gas-amount: 200000
+      debug: false
+      timeout: 20s
+      output-format: json
+      sign-mode: direct
+  hero:
+    type: cosmos
+    value:
+      key: validator-key
+      chain-id: hero-1
+      rpc-addr: <rpc-hero>
+      grpc-addr: <grpc-hero>
+      account-prefix: cosmos
+      keyring-backend: test
+      gas-adjustment: 1.5
+      gas-prices: 0.001uhero
+      min-gas-amount: 200000
+      debug: false
+      timeout: 20s
+      output-format: json
+      sign-mode: direct
+  neutron:
+    type: cosmos
+    value:
+      key: validator-key
+      chain-id: neutron
+      rpc-addr: <rpc-neutron>
+      grpc-addr: <grpc-neutron>
+      account-prefix: neutron
+      keyring-backend: test
+      gas-adjustment: 1.5
+      gas-prices: 0.001untrn
+      min-gas-amount: 200000
+      debug: false
+      timeout: 20s
+      output-format: json
+      sign-mode: direct
+  gopher:
+    type: cosmos
+    value:
+      key: validator-key
+      chain-id: gopher
+      rpc-addr: <rpc-gopher>
+      grpc-addr: <grpc-gopher>
+      account-prefix: cosmos
+      keyring-backend: test
+      gas-adjustment: 1.5
+      gas-prices: 0.001ugoph
+      min-gas-amount: 200000
+      debug: false
+      timeout: 20s
+      output-format: json
+      sign-mode: direct
+paths:
+    provider-sputnik:
+      src:
+        chain-id: provider
+        client-id: 07-tendermint-0
+        connection-id: connection-0
+      dst:
+        chain-id: sputnik
+        client-id: 07-tendermint-0
+        connection-id: connection-0
+      src-channel-filter:
+         rule: "allowlist"
+         channel-list: ["channel-0","channel-1"]
+    provider-hero:
+      src:
+        chain-id: provider
+        client-id: 07-tendermint-3
+        connection-id: connection-14
+      dst:
+        chain-id: hero-1
+        client-id: 07-tendermint-0
+        connection-id: connection-0
+      src-channel-filter:
+         rule: "allowlist"
+         channel-list: ["channel-8","channel-9"]
+    provider-neutron:
+      src:
+        chain-id: provider
+        client-id: 07-tendermint-4
+        connection-id: connection-15
+      dst:
+        chain-id: neutron
+        client-id: 07-tendermint-0
+        connection-id: connection-0
+      src-channel-filter:
+         rule: "allowlist"
+         channel-list: ["channel-10","channel-11"]
+    provider-gopher:
+      src:
+        chain-id: provider
+        client-id: 07-tendermint-5
+        connection-id: connection-16
+      dst:
+        chain-id: gopher
+        client-id: 07-tendermint-0
+        connection-id: connection-0
+      src-channel-filter:
+         rule: "allowlist"
+         channel-list: ["channel-12","channel-13"]
