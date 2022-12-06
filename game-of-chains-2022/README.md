@@ -281,7 +281,7 @@ To earn points in the Game of Chains testnet program, you can:
 | 8 | 2 | Vote no on at least one proposal that links to malicious binaries | TX hash and reason for voting no |
 | 26 | 1 | Vote yes on the Hero `create-consumer-chain` proposal | TX hash |
 | 30 | 1 | Vote **yes** on the `slasher` chain `consumer-addition` proposal | TX hash |
-| 32 | 2 | Vote on at least 70% of all proposals | TX hashes |
+| 32 | 2 | Vote on at least 70% of all proposals | TX hashes or block explorer link |
 
 #### Validator Sets Monitoring
 
