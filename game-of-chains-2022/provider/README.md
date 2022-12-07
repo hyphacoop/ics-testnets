@@ -17,7 +17,7 @@ Contents
   * [Ping Dashboard](https://testnet.ping.pub/provider)
 
 * Timeline
-  * 2022-12-08: Block height `480681` will be reached at approximately `17:00 UTC`.
+  * 2022-12-08: Block height `480681` will be reached at approximately `16:00 UTC`.
   * 2022-11-30: Software upgrade proposal submitted to upgrade to `goc-december` version at block height `480681`.
   * 2022-11-10: New gaiad binary published to bump ICS to `v0.2.1`.
   * 2022-11-07: Chain started.
@@ -29,9 +29,9 @@ Contents
 ---
 * Binary: `gaiad`
   * [Linux amd64 build](gaiad-goc-december)
-  * [glnro/ics-sdk45 branch](https://github.com/cosmos/gaia/tree/glnro/ics-sdk45)
-  * Commit `b56fe257ec4c5647bdc105602b57273936b714eb`
-* Binary SHA256: `a23b9c9f320b047ffe63db738defeda12c22a29e5d8572a3a545213dd729b5a8`
+  * [cosmos/gaia repo](https://github.com/cosmos/gaia)
+  * Commit `2627f224c78010c1884f7e8da3d9ce0d5b54a812`
+* Binary SHA256: `54c708db870f1a2a7f32fd751550e8a4baedd4c282b7272c830570746be3c84b`
 ---
 
 **`ICS v0.2.1` version (current):**
@@ -50,6 +50,9 @@ Contents
 * Bech32 prefix: `cosmos`
 
 ## ⛔ ATTENTION ⛔
+
+**2022-12-07 18:40 UTC** 
+- The binary and commit for the `gaiad-goc-december` version have been updated to fix a critical bug. Please use commit `2627f224c78010c1884f7e8da3d9ce0d5b54a812` from the [cosmos/gaia repo](https://github.com/cosmos/gaia/commit/2627f224c78010c1884f7e8da3d9ce0d5b54a812) for the `goc-december` upgrade.
 
 **2022-12-01 17:00 UTC** 
 - The upgrade height of `480681` for `goc-december` will be reached on **Dec 8** at approximately `17:00 UTC`.
@@ -113,7 +116,7 @@ You can either build a new binary or download the one in this folder, and follow
 After upgrading you should see the version below:
 ```
 gaiad version
-HEAD-b56fe257ec4c5647bdc105602b57273936b714eb
+HEAD-2627f224c78010c1884f7e8da3d9ce0d5b54a812
 ```
 
 ## Upgrading to ICS v0.2.1
