@@ -29,7 +29,7 @@ Contents
 ---
 * Binary: `gaiad`
   * [Linux amd64 build](gaiad-goc-december)
-  * [cosmos/gaia repo](https://github.com/cosmos/gaia)
+  * [cosmos/gaia repo](https://github.com/cosmos/gaia/commit/2627f224c78010c1884f7e8da3d9ce0d5b54a812)
   * Commit `2627f224c78010c1884f7e8da3d9ce0d5b54a812`
 * Binary SHA256: `54c708db870f1a2a7f32fd751550e8a4baedd4c282b7272c830570746be3c84b`
 ---
