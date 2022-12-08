@@ -54,12 +54,12 @@ The fresh-genesis file with was generated using the following settings:
 
 * **p2p seeds : `a1f578af6dfe2e80543dc9144babe09979fc3ce4@tenderseed.ccvalidators.com:29099`**
 * **p2p persistent peers : `309fc4130e9495897265a54980747f783391e153@65.109.37.154:16696,0ae9a4e98a43b00c194faa97d41311a34270e4dd@23.88.7.177:26756`**
-* These peers represent the `CryptoCrew Validators` validator. 
+* These peers represent the `CryptoCrew Validators` validator.
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `30000`).
 
 * Public REST-API (LCD) endpoint: https://rest.goc-flash.ccvalidators.com:443
 * Public RPC endpoint: https://rpc.goc-flash.ccvalidators.com:443
-* Public gRPC endpoint: grpc://grpc.goc-flash.ccvalidators.com:443
+* Public gRPC endpoint: grpcs://grpc.goc-flash.ccvalidators.com:443
 * Faucet: https://faucet.goc-flash.ccvalidators.com:443
 
 ## Join via Bash Script
