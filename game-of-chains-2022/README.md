@@ -197,6 +197,7 @@ Phase tasks:
 * 🔎 7. Vote no on at least one proposal that contains incorrect metadata (1 point)
 * 🔎 8. Vote no on at least one proposal that links to malicious binaries (2 points)
 * 🔎 30. Vote **yes** on the `slasher` chain `consumer-addition` proposal (1 point)
+* 🔎 32. Vote on at least 70% of all proposals (2 points)
 * 👷 17. Sign on the last block of the Sputnik chain without having been jailed for downtime since the first block (2 point)
 * 👷 18. Create at least one custom consumer chain binary for a proposal that passes (5 points)
 * 👷 19. Submit at least one `create-consumer-chain` proposal for a chain that starts (5 points)
@@ -205,7 +206,7 @@ Phase tasks:
 * 👷 28. Assign a key on a consumer chain (1 point).
 * ~~👷 29. Assign a key on a new consumer chain (1 point).~~
 * 👷 31. Get unjailed after being slashed by the `slasher` chain (2 points)
-* **44 points maximum**
+* **46 points maximum**
 
 #### Round 6: Proposal Due Diligence
 
@@ -281,6 +282,7 @@ To earn points in the Game of Chains testnet program, you can:
 | 8 | 2 | Vote no on at least one proposal that links to malicious binaries | TX hash and reason for voting no |
 | 26 | 1 | Vote yes on the Hero `create-consumer-chain` proposal | TX hash |
 | 30 | 1 | Vote **yes** on the `slasher` chain `consumer-addition` proposal | TX hash |
+| 32 | 2 | Vote on at least 70% of all proposals | TX hashes or block explorer link |
 
 #### Validator Sets Monitoring
 
