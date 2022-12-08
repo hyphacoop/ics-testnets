@@ -14,7 +14,8 @@ NODE_MONIKER=flash
 CHAIN_BINARY_URL='https://github.com/clemensgg/flash/releases/download/v0.1.0/flashd-v0.1.0-linux-amd64'
 CHAIN_BINARY='flashd'
 CHAIN_ID=flash
-PERSISTENT_PEERS=""
+PERSISTENT_PEERS="309fc4130e9495897265a54980747f783391e153@65.109.37.154:16696,0ae9a4e98a43b00c194faa97d41311a34270e4dd@23.88.7.177:26756"
+SEEDS="a1f578af6dfe2e80543dc9144babe09979fc3ce4@tenderseed.ccvalidators.com:29099"
 
 # Install go 1.19.2
 echo "Installing go..."
@@ -64,7 +65,7 @@ echo "After=network-online.target"          | sudo tee /etc/systemd/system/$NODE
 echo ""                                     | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo "[Service]"                            | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo "User=$USER"                            | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
-echo "ExecStart=$HOME/go/bin/$CHAIN_BINARY start --home $NODE_HOME --p2p.persistent_peers $PERSISTENT_PEERS" | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
+echo "ExecStart=$HOME/go/bin/$CHAIN_BINARY start --home $NODE_HOME --p2p.persistent_peers $PERSISTENT_PEERS --p2p.seeds $SEEDS" | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo "Restart=always"                       | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo "RestartSec=3"                         | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo "LimitNOFILE=4096"                     | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
