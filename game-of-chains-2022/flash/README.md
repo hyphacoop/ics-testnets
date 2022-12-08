@@ -95,10 +95,10 @@ Or use these steps to manually generate and assign a new key for `flash`:
 
 1) after normal init of `flash` or [using the installscript](#join-via-bash-script), first generate a new `priv_validator_key.json`:
 ```sh
-flashd init --home ~/TMP
-PUBKEY=$(flashd --home ~/TMP tendermint show-validator)
-cp ~/TMP/config/priv_validator_key.json ~/.flash/config
-rm -r ~/TMP
+flashd init --home $HOME/TMP flash
+PUBKEY=$(flashd --home $HOME/TMP tendermint show-validator)
+cp $HOME/TMP/config/priv_validator_key.json $HOME/.flash/config
+rm -r $HOME/TMP
 echo "new key generated at $HOME/.flash/config/priv_validator_key.json"
 echo "pubkey:"
 echo "*****************************************"
@@ -113,7 +113,7 @@ echo "*****************************************"
 PUBKEY='{"@type":"/cosmos.crypto.ed25519.PubKey","key":"..."}'
 
 NODE_NAME=gaiad
-NODE_HOME=~/.gaia
+NODE_HOME=$HOME/.gaia
 KEY_NAME=validator
 KEYRING_BACKEND=os
 DENOM=uprov
