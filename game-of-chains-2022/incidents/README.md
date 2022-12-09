@@ -9,7 +9,7 @@
 ## Logs
 * Last 3000 lines from validator: https://paste.c-net.org/EastwoodPostage
 * Hermes logs: https://paste.c-net.org/RougeSeventy
-
+* danb's [full node log](2022-12-08-danb.log) using Shawn's logger script (shows slash throttling events)
 
 There is a [genesis file](provider-genesis.json.gz) exported at height 484893 also included in this repository.
 
