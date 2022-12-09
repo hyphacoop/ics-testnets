@@ -12,3 +12,6 @@
 
 
 There is a [genesis file](provider-genesis.json.gz) exported at height 484893 also included in this repository.
+
+## Tools
+* Shawn forked gaia to add logging behaviour https://github.com/smarshall-spitzbart/gaia/commit/4d627a2e7193facbeb419319c69043e00d4de104
