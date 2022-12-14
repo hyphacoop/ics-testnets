@@ -18,39 +18,8 @@ The process we are following to start the consumer chains is as follows:
     ```bash
     jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' <consumer genesis without CCV state> ccvconsumer_genesis.json > <consumer genesis file with CCV state>
     ```
-   Modify the parameters of the CCV module so the `unbonding_period` matches the provider chain's. For a provider chain with a 4-day unbonding period, change this:
-   ```
-   "ccvconsumer": {
-      "params": {
-        "enabled": true,
-        "blocks_per_distribution_transmission": "1000",
-        "distribution_transmission_channel": "",
-        "provider_fee_pool_addr_str": "",
-        "ccv_timeout_period": "2419200s",
-        "transfer_timeout_period": "3600s",
-        "consumer_redistribution_fraction": "0.75",
-        "historical_entries": "10000",
-        "unbonding_period": "1728000s"
-      },
-   ```
-   To this:
-   ```
-   "ccvconsumer": {
-      "params": {
-        "enabled": true,
-        "blocks_per_distribution_transmission": "1000",
-        "distribution_transmission_channel": "",
-        "provider_fee_pool_addr_str": "",
-        "ccv_timeout_period": "2419200s",
-        "transfer_timeout_period": "3600s",
-        "consumer_redistribution_fraction": "0.75",
-        "historical_entries": "10000",
-        "unbonding_period": "345600s"
-      },
-   ```  
-
-5. Run the consumer chain binary.
-6. Set up IBC connections and channels between the provider chain and the consumer chain.
+6. Run the consumer chain binary.
+7. Set up IBC connections and channels between the provider chain and the consumer chain.
    - Using Hermes:
    ```
    hermes create connection --a-chain <consumer chain ID> --a-client 07-tendermint-0 --b-client <client assigned by provider chain> 
