@@ -7,8 +7,8 @@
   * Built to `cosmos/interchain-security` commit [22ca56194b5a64a9d65b0e007a83b8640a6c60a9](https://github.com/cosmos/interchain-security/commit/22ca56194b5a64a9d65b0e007a83b8640a6c60a9)
   * Built with Go 1.21.8
 * Genesis file
-  * `pss-provider-genesis.json`
-  * SHASUM: ` ` (verify with `shasum -a 256 pss-provider-genesis.json`)
+  * `provider-genesis.json`
+  * SHASUM: `ce177884620dfb2a90a5908fd348c1d9030cdbbb8d4de419022aebf2f1f3e42a` (verify with `shasum -a 256 provider-genesis.json`)
 * Launch date: 2024-03-27
 * Launch ICS version: commit [22ca56194b5a64a9d65b0e007a83b8640a6c60a9](https://github.com/cosmos/interchain-security/commit/22ca56194b5a64a9d65b0e007a83b8640a6c60a9)
 
@@ -16,12 +16,12 @@
 
 ### Persistent peers
 
-* Hypha validator: [node id]@val.pss-devnet.polypore.xyz:26656
-* Full node: [node id]@node.pss-devnet.polypore.xyz:26656
+* Hypha validator: `f048c1ad444283d7ada07b834202e89aa84dbe87@provider-validator.pss-devnet.polypore.xyz:26656`
+* Hypha full node: `fc5ccc76afa8397d66a34733e8bf89e471751648@provider-node.pss-devnet.polypore.xyz:26656`
 
 ### State sync
 
-* https://rpc.node.pss-devnet.polypore.xyz:443
+* https://rpc.provider-node.pss-devnet.polypore.xyz:443
 
 ## How to Join
 

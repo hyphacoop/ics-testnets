@@ -10,7 +10,7 @@
 
 PRIV_VALIDATOR_KEY_FILE=~/priv_validator_key.json
 NODE_KEY_FILE=~/node_key.json
-NODE_HOME=~/.pss-provider
+NODE_HOME=~/.provider
 NODE_MONIKER=devnet-provider
 SERVICE_NAME=devnet-provider
 CHAIN_VERSION="22ca561"
@@ -21,9 +21,9 @@ GAS_PRICE=0.005uprov
 CHAIN_BINARY='interchain-security-pd'
 CHAIN_ID=pss-devnet-provider
 GENESIS_URL=https://github.com/hyphacoop/ics-testnets/raw/master/pss-devnet/pss-devnet-provider/provider-genesis.json
-PEERS="node_id@node.pss-devnet.polypore.xyz:26656,node_id@val.pss-devnet.polypore.xyz:26656"
-SYNC_RPC_1=https://rpc.node.pss-devnet.polypore.xyz:443
-SYNC_RPC_2=https://rpc.node.pss-devnet.polypore.xyz:443
+PEERS="f048c1ad444283d7ada07b834202e89aa84dbe87@provider-validator.pss-devnet.polypore.xyz:26656,fc5ccc76afa8397d66a34733e8bf89e471751648@provider-node.pss-devnet.polypore.xyz:26656"
+SYNC_RPC_1=https://rpc.provider-node.pss-devnet.polypore.xyz:443
+SYNC_RPC_2=https://rpc.provider-node.pss-devnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq
@@ -58,6 +58,8 @@ $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
 sed -i -e "/persistent_peers =/ s^= .*^= \"$PEERS\"^" $NODE_HOME/config/config.toml
+sed -i -e "/experimental_max_gossip_connections_to_persistent_peers = / s^= .*= 0^" $NODE_HOME/config/config.toml
+sed -i -e "/experimental_max_gossip_connections_to_non_persistent_peers = / s^= .*= 0^" $NODE_HOME/config/config.toml
 
 # Replace keys
 echo "Replacing keys and genesis file..."
@@ -67,7 +69,7 @@ cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 if $STATE_SYNC ; then
     echo "Configuring state sync..."
     CURRENT_BLOCK=$(curl -s $SYNC_RPC_1/block | jq -r '.result.block.header.height')
-    TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
+    TRUST_HEIGHT=$[$CURRENT_BLOCK-100]
     TRUST_BLOCK=$(curl -s $SYNC_RPC_1/block\?height\=$TRUST_HEIGHT)
     TRUST_HASH=$(echo $TRUST_BLOCK | jq -r '.result.block_id.hash')
     sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
