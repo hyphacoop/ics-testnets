@@ -30,3 +30,4 @@ The `join-devnet-provider.sh` script provided in this repo will install the chai
 * The script will build the `interchain-security-pd` binary using Go 1.21.8.
 * State sync is turned on by default, but you can turn it off. The full node has pruning set to nothing and will sync all the blocks starting from height 1.
 
+**Please message somebody from the Hypha team with your wallet address and we will send funds to create a validator with.**
