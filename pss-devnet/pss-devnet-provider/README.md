@@ -7,7 +7,7 @@
   * Built to `cosmos/interchain-security` commit [22ca56194b5a64a9d65b0e007a83b8640a6c60a9](https://github.com/cosmos/interchain-security/commit/22ca56194b5a64a9d65b0e007a83b8640a6c60a9)
   * Built with Go 1.21.8
 * Genesis file
-  * `provider-genesis.json`
+  * [`provider-genesis.json`](https://github.com/hyphacoop/ics-testnets/raw/main/pss-devnet/pss-devnet-provider/provider-genesis.json)
   * SHASUM: `ce177884620dfb2a90a5908fd348c1d9030cdbbb8d4de419022aebf2f1f3e42a` (verify with `shasum -a 256 provider-genesis.json`)
 * Launch date: 2024-03-27
 * Launch ICS version: commit [22ca56194b5a64a9d65b0e007a83b8640a6c60a9](https://github.com/cosmos/interchain-security/commit/22ca56194b5a64a9d65b0e007a83b8640a6c60a9)
