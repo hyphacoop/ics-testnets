@@ -57,9 +57,7 @@ $CHAIN_BINARY config chain-id $CHAIN_ID --home $NODE_HOME
 $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
-sed -i -e "/persistent_peers =/ s^= .*^= \"$PEERS\"^" $NODE_HOME/config/config.toml
-sed -i -e "/experimental_max_gossip_connections_to_persistent_peers = / s^= .*= 0^" $NODE_HOME/config/config.toml
-sed -i -e "/experimental_max_gossip_connections_to_non_persistent_peers = / s^= .*= 0^" $NODE_HOME/config/config.toml
+sed -i -e "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" $NODE_HOME/config/config.toml
 
 # Replace keys
 echo "Replacing keys and genesis file..."
