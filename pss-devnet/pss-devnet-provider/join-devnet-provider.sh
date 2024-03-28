@@ -20,7 +20,7 @@ GAS_PRICE=0.005uprov
 
 CHAIN_BINARY='interchain-security-pd'
 CHAIN_ID=pss-devnet-provider
-GENESIS_URL=https://github.com/hyphacoop/ics-testnets/raw/master/pss-devnet/pss-devnet-provider/provider-genesis.json
+GENESIS_URL=https://raw.githubusercontent.com/hyphacoop/ics-testnets/main/pss-devnet/pss-devnet-provider/provider-genesis.json
 PEERS="f048c1ad444283d7ada07b834202e89aa84dbe87@provider-validator.pss-devnet.polypore.xyz:26656,fc5ccc76afa8397d66a34733e8bf89e471751648@provider-node.pss-devnet.polypore.xyz:26656"
 SYNC_RPC_1=https://rpc.provider-node.pss-devnet.polypore.xyz:443
 SYNC_RPC_2=https://rpc.provider-node.pss-devnet.polypore.xyz:443
