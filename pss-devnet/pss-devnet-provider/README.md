@@ -4,13 +4,13 @@
 * Denom: `uprov`
 * Current binary
   * `interchain-security-pd`
-  * Built to `cosmos/interchain-security` commit [22ca56194b5a64a9d65b0e007a83b8640a6c60a9](https://github.com/cosmos/interchain-security/commit/22ca56194b5a64a9d65b0e007a83b8640a6c60a9)
+  * Built to the [`pss-devnet-1`](https://github.com/cosmos/interchain-security/releases/tag/pss-devnet-1) tag in the `cosmos/interchain-security` repo
   * Built with Go 1.21.8
 * Genesis file
   * [`provider-genesis.json`](https://github.com/hyphacoop/ics-testnets/raw/main/pss-devnet/pss-devnet-provider/provider-genesis.json)
   * SHASUM: `ce177884620dfb2a90a5908fd348c1d9030cdbbb8d4de419022aebf2f1f3e42a` (verify with `shasum -a 256 provider-genesis.json`)
 * Launch date: 2024-03-27
-* Launch ICS version: commit [22ca56194b5a64a9d65b0e007a83b8640a6c60a9](https://github.com/cosmos/interchain-security/commit/22ca56194b5a64a9d65b0e007a83b8640a6c60a9)
+* Launch ICS version: commit `22ca56194b5a64a9d65b0e007a83b8640a6c60a9` (now deprecated)
 
 ## Endpoints
 
@@ -31,3 +31,24 @@ The `join-devnet-provider.sh` script provided in this repo will install the chai
 * State sync is turned on by default, but you can turn it off. The full node has pruning set to nothing and will sync all the blocks starting from height 1.
 
 **Please message somebody from the Hypha team with your wallet address and we will send funds to create a validator with.**
+
+### Creating a validator
+
+Use the `staking create-validator` transaction to create a validator after you have funded your self-delegation wallet. You can use the command below as a reference:
+
+```
+interchain-security-pd tx staking create-validator \
+--amount 1000000uprov \
+--pubkey $(interchain-security-pd tendermint show-validator) \
+--moniker "your-validator-moniker" \
+--chain-id "pss-devnet-provider" \
+--commission-rate "0.10" \
+--commission-max-rate "0.20" \
+--commission-max-change-rate "0.01" \
+--min-self-delegation 1000000 \
+--gas "auto" \
+--gas-adjustment 1.2 \
+--gas-prices 0.005uprov \
+--from self-delegation-wallet \
+-y
+```
