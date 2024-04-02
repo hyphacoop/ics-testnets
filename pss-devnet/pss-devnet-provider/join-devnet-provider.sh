@@ -13,7 +13,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.provider
 NODE_MONIKER=devnet-provider
 SERVICE_NAME=devnet-provider
-CHAIN_VERSION="22ca561"
+CHAIN_VERSION="pss-devnet-1"
 STATE_SYNC=true
 GAS_PRICE=0.005uprov
 # ***
