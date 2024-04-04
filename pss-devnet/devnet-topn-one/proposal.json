@@ -10,7 +10,7 @@
   "binary_hash": "992b8bc2f3f7e4e56371d54515b753ac88ce334dd48b028db25caae7ba438b2e",
   "spawn_time": "2024-04-05T14:30:00.000000000Z",
   "top_N": 66,
-  "blocks_per_distribution_transmission": 100,
+  "blocks_per_distribution_transmission": 1000,
   "consumer_redistribution_fraction": "0.75",
   "historical_entries": 10000,
   "transfer_timeout_period": 1800000000000,
