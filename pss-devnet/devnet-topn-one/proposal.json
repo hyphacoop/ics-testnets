@@ -15,6 +15,6 @@
   "historical_entries": 10000,
   "transfer_timeout_period": 1800000000000,
   "ccv_timeout_period": 2419200000000000,
-  "unbonding_period": 7200000000000,
+  "unbonding_period": 10800000000000,
   "deposit": "1000uprov"
 }
