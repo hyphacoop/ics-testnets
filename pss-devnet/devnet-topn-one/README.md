@@ -15,11 +15,11 @@
 
 * Pre-spawn time genesis file
   * [`topn-one-genesis-pre-spawn.json`](./topn-one-genesis-pre-spawn.json)
-  * SHASUM: `c32365b7ce2b091eada3ff1d2f5adc19a5864939635c3e59b70c46a270d67dd0` (verify with `shasum -a 256 topn-genesis-pre-spawn.json`)
+  * SHASUM: `c32365b7ce2b091eada3ff1d2f5adc19a5864939635c3e59b70c46a270d67dd0` (verify with `shasum -a 256 topn-one-genesis-pre-spawn.json`)
 * Spawn time: `2024-04-05T14:30:00Z`
 * **Launch genesis file**
   * `topn-one-genesis.json`
-  * SHASUM: `TBA`
+  * SHASUM: `50686f392e413be31f804e8a791eab777b110e2f2e8de1bfb0499d0938edd12a` (verify with `shasum -a 256 topn-one-genesis.json`)
 
 ## Endpoints
 
