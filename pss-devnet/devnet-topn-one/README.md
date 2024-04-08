@@ -1,4 +1,4 @@
-# pss-devnet-topn Chain Information
+# devnet-topn-one Chain Information
 
 * Chain ID: `devnet-topn-one`
 * Denom: `utop`
