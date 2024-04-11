@@ -8,7 +8,7 @@
   * `interchain-security-cd`
   * Built to the [`pss-devnet-1`](https://github.com/cosmos/interchain-security/releases/tag/pss-devnet-1) tag in the `cosmos/interchain-security` repo
   * Built with Go 1.21.8
-  * SHASUM: `992b8bc2f3f7e4e56371d54515b753ac88ce334dd48b028db25caae7ba438b2e` (verify with `shasum -a 256 topn-genesis-pre-spawn.json`)
+  * SHASUM: `992b8bc2f3f7e4e56371d54515b753ac88ce334dd48b028db25caae7ba438b2e` (verify with `shasum -a 256 interchain-security-cd`)
 * Launch date: 2024-04-05
 
 ## Consumer launch

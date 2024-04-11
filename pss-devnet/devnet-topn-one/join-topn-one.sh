@@ -1,12 +1,9 @@
 #!/bin/bash
-# Set up a service to join the provider chain.
+# Set up a service to join the devnet-topn-one chain.
 
+# ***
 # Configuration
 # You should only have to modify the values in this block
-# * Keys
-#    The private validator key and node key operations are provided in case you have a pre-existing set of keys.
-#    If you want to generate these keys as part of the setup, comment out the "Replace keys" section.
-# 
 
 NODE_HOME=~/.topn
 NODE_MONIKER=devnet-topn-one
