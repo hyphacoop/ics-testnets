@@ -14,7 +14,7 @@ GAS_PRICE=0utop
 
 CHAIN_BINARY='interchain-security-cd'
 CHAIN_ID=devnet-topn-one
-PEERS="ddd8f2add13abcaf96c6929419b52452ec5c6e3a@topn-one-val.pss-devnet.polypore.xyz:266566,244a3738d325ea5873a8d0262a64e8369e583772@topn-one-node.pss-devnet.polypore.xyz:26656"
+PEERS="ddd8f2add13abcaf96c6929419b52452ec5c6e3a@topn-one-val.pss-devnet.polypore.xyz:26656,244a3738d325ea5873a8d0262a64e8369e583772@topn-one-node.pss-devnet.polypore.xyz:26656"
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
