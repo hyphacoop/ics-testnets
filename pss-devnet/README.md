@@ -4,6 +4,7 @@
 
 ## Active chains
 * [pss-devnet-provider](./pss-devnet-provider/README.md)
+* [devnet-topn-one](./devnet-topn-one/README.md)
 
 ## Planned events
 
