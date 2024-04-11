@@ -14,7 +14,7 @@ GAS_PRICE=0uopt
 
 CHAIN_BINARY='interchain-security-cd'
 CHAIN_ID=devnet-optin-one
-PEERS="aa61ac6b0d6c8a80f9ad2c216b72774a07c5f1db@optin-one-val.pss-devnet.polypore.xyz:266566,cf4ba959d56860137d9c3acfc98d5d49b07832e2@optin-one-node.pss-devnet.polypore.xyz:26656"
+PEERS="aa61ac6b0d6c8a80f9ad2c216b72774a07c5f1db@optin-one-val.pss-devnet.polypore.xyz:26656,cf4ba959d56860137d9c3acfc98d5d49b07832e2@optin-one-node.pss-devnet.polypore.xyz:26656"
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
