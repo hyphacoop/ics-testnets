@@ -1,15 +1,10 @@
 #!/bin/bash
 # Set up a service to join the provider chain.
 
+# ***
 # Configuration
 # You should only have to modify the values in this block
-# * Keys
-#    The private validator key and node key operations are provided in case you have a pre-existing set of keys.
-#    If you want to generate these keys as part of the setup, comment out the "Replace keys" section.
-# 
 
-PRIV_VALIDATOR_KEY_FILE=~/priv_validator_key.json
-NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.provider
 NODE_MONIKER=devnet-provider
 SERVICE_NAME=devnet-provider
@@ -58,11 +53,6 @@ $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
 sed -i -e "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" $NODE_HOME/config/config.toml
-
-# Replace keys
-echo "Replacing keys and genesis file..."
-cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
-cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 if $STATE_SYNC ; then
     echo "Configuring state sync..."
