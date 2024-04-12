@@ -19,7 +19,7 @@
 * Spawn time: `2024-04-12T14:30:00Z`
 * **Launch genesis file**
   * `optin-one-genesis.json`
-  * SHASUM: `TBA` (verify with `shasum -a 256 optin-one-genesis.json`)
+  * SHASUM: `af7174dca2049b4a3934d513245e960ddfaa85f76926a65c0283af683700f3bb` (verify with `shasum -a 256 optin-one-genesis.json`)
 
 ## Endpoints
 
