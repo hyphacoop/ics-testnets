@@ -75,3 +75,10 @@ jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' genesis.json ccv-provider-denom
   ```
   interchain-security-pd tx provider opt-in devnet-optin-one <consumer node public key>
   ```
+
+## How to Join
+
+The [`join-optin-one.sh`](./join-optin-one.sh) script provided in this repo will install the chain binary.
+* It must be run either as root or from a sudoer account.
+* The script will build the `interchain-security-cd` binary using Go 1.21.8.
+* State sync is turned on by default, but you can turn it off. The full node has pruning set to nothing and will sync all the blocks starting from height 1.
