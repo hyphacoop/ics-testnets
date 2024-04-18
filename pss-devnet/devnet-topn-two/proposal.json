@@ -1,0 +1,19 @@
+{
+  "title": "Add the devnet-topn-two consumer chain",
+  "summary": "The last consumer chain we launch will be a top N (top_N=80) chain. It will have the \"devnet-topn-two\" chain ID.",
+  "chain_id": "devnet-topn-two",
+  "initial_height": {
+    "revision_height": 1
+  },
+  "genesis_hash": "146155e2fd60b0ea287e5bd7195e8d6d0e77e1f5cc9db1e491db4bf38e7236f8",
+  "binary_hash": "992b8bc2f3f7e4e56371d54515b753ac88ce334dd48b028db25caae7ba438b2e",
+  "spawn_time": "2024-04-19T14:30:00.000000000Z",
+  "top_N": 80,
+  "blocks_per_distribution_transmission": 1000,
+  "consumer_redistribution_fraction": "0.75",
+  "historical_entries": 10000,
+  "transfer_timeout_period": 1800000000000,
+  "ccv_timeout_period": 2419200000000000,
+  "unbonding_period": 10800000000000,
+  "deposit": "1000uprov"
+}
