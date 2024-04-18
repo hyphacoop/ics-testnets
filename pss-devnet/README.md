@@ -5,7 +5,8 @@
 ## Active chains
 * [pss-devnet-provider](./pss-devnet-provider/README.md)
 * [devnet-topn-one](./devnet-topn-one/README.md)
-
+* [devnet-optin-one](./devnet-optin-one/README.md)
+* 
 ## Planned events
 
 ### Launch a top-N chain (`devnet-topn-one`)
