@@ -18,8 +18,8 @@
   * SHASUM: `146155e2fd60b0ea287e5bd7195e8d6d0e77e1f5cc9db1e491db4bf38e7236f8` (verify with `shasum -a 256 topn-two-genesis-pre-spawn.json`)
 * Spawn time: `2024-04-19T14:30:00Z`
 * **Launch genesis file**
-  * `topn-two-genesis.json`
-  * SHASUM: `TBD` (verify with `shasum -a 256 topn-two-genesis.json`)
+  * [`topn-two-genesis.json`](./topn-two-genesis.json)
+  * SHASUM: `38bf8472c069666a8c426b24b23d70a1f931d47f22689b326a511028b4890084` (verify with `shasum -a 256 topn-two-genesis.json`)
 
 ## Endpoints
 
