@@ -85,3 +85,10 @@ If you are not in the top N of the validator set and you didn't opt in while the
   ```
   interchain-security-pd tx provider opt-in devnet-topn-two <consumer node public key>
   ```
+
+## How to Join
+
+The `join-topn-two.sh` script provided in this repo will install the chain binary.
+* It must be run either as root or from a sudoer account.
+* The script will build the `interchain-security-cd` binary using Go 1.21.8.
+* State sync is turned on by default, but you can turn it off. The full node has pruning set to nothing and will sync all the blocks starting from height 1.
