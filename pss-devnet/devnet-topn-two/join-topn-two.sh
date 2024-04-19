@@ -1,24 +1,24 @@
 #!/bin/bash
-# Set up a service to join the devnet-topn-one chain.
+# Set up a service to join the devnet-topn-two chain.
 
 # ***
 # Configuration
 # You should only have to modify the values in this block
 
 NODE_HOME=~/.topn
-NODE_MONIKER=devnet-topn-one
-SERVICE_NAME=devnet-topn-one
+NODE_MONIKER=devnet-topn-two
+SERVICE_NAME=devnet-topn-two
 CHAIN_VERSION="pss-devnet-1"
 STATE_SYNC=true
 GAS_PRICE=0utop
 # ***
 
 CHAIN_BINARY='interchain-security-cd'
-CHAIN_ID=devnet-topn-one
-GENESIS_URL=https://raw.githubusercontent.com/hyphacoop/ics-testnets/main/pss-devnet/devnet-topn-one/topn-one-genesis.json
-PEERS="ddd8f2add13abcaf96c6929419b52452ec5c6e3a@topn-one-val.pss-devnet.polypore.xyz:26656,244a3738d325ea5873a8d0262a64e8369e583772@topn-one-node.pss-devnet.polypore.xyz:26656"
-SYNC_RPC_1=https://rpc.topn-one-node.pss-devnet.polypore.xyz:443
-SYNC_RPC_2=https://rpc.topn-one-node.pss-devnet.polypore.xyz:443
+CHAIN_ID=devnet-topn-two
+GENESIS_URL=https://raw.githubusercontent.com/hyphacoop/ics-testnets/main/pss-devnet/devnet-topn-two/topn-two-genesis.json
+PEERS="de02b43bebae7ad3612d0cb88edcc44028d21f3e@topn-two-val.pss-devnet.polypore.xyz:26656,1b13a08027b315becae30785d0eb15cffff6ba5f@topn-two-node.pss-devnet.polypore.xyz:26656"
+SYNC_RPC_1=https://rpc.topn-two-node.pss-devnet.polypore.xyz:443
+SYNC_RPC_2=https://rpc.topn-two-node.pss-devnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq
@@ -77,7 +77,7 @@ sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
 
 echo "[Unit]"                               | sudo tee /etc/systemd/system/$SERVICE_NAME.service
-echo "Description=PSS devnet-topn-one"      | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Description=PSS devnet-topn-two"      | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "After=network-online.target"          | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Service]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
